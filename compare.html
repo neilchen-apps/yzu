@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A／B／C 方案比較｜系網重設計</title>
+<meta name="description" content="以相同核心內容並排比較三個首頁方案，並切換 360／768／1280px 預覽寬度。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23005FCC'/%3E%3Ctext x='16' y='21' font-size='13' font-family='monospace' font-weight='700' fill='white' text-anchor='middle'%3ECSE%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('cse-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">跳到主要內容</a>
+<div class="demo-bar" role="note"><div class="container"><strong>教學示例：</strong>本網站為 Web 程式設計課程「系網重設計」專題作品。教師、公告、活動與研究分類均為示例內容，不代表元智大學資訊工程學系正式資訊；正式資料請見 <a href="https://www.cse.yzu.edu.tw/" rel="noopener">官方系網</a>。</div></div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="元智大學資訊工程學系 首頁">
+      <span class="brand-mark" aria-hidden="true">CSE</span>
+      <span class="brand-text"><span class="brand-name">元智大學 資訊工程學系</span><span class="brand-sub">YZU · COMPUTER SCIENCE &amp; ENGINEERING</span></span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="主要導覽">
+      <ul>
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="about.html">認識本系</a></li>
+      <li><a href="courses.html">課程與學程</a></li>
+      <li><a href="faculty.html">師資</a></li>
+      <li><a href="research.html">研究與成果</a></li>
+      <li><a href="news.html">消息與活動</a></li>
+      <li><a href="resources.html">資源與服務</a></li>
+      <li><a href="design.html" aria-current="page">設計說明</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle>◐ 自動</button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">選單</button>
+  </div>
+</header>
+<main id="main" class="compare">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="麵包屑"><ol><li><a href="index.html">首頁</a></li><li><a href="design.html">設計說明</a></li><li><span aria-current="page">方案比較</span></li></ol></nav>
+      <h1>A／B／C 首頁方案比較</h1>
+      <p class="lead">三個方案保留完全相同的核心內容：系名與定位、六個內容入口、三則公告、四個研究方向。只改變風格、配色與排版。</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="tbl-h">
+    <div class="container">
+      <h2 id="tbl-h">固定了什麼、改了什麼</h2>
+      <div class="table-wrap" tabindex="0" role="region" aria-labelledby="cmp-cap">
+        <table>
+          <caption id="cmp-cap">三方案設定與取捨</caption>
+          <thead><tr><th scope="col">面向</th><th scope="col">方案 A（主站採用）</th><th scope="col">方案 B</th><th scope="col">方案 C</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">風格</th><td>極簡清晰：細框、輕陰影、圓角 14px</td><td>科技介面：等寬字標題、細線框、發光 hover</td><td>編輯敘事：襯線標題、分隔線、硬邊</td></tr>
+            <tr><th scope="row">配色</th><td>藍白清晰 #F5F7FA／#172B4D／#005FCC</td><td>深色青紫 #0B1220／#F1F5F9／#67E8F9</td><td>米白森林綠 #FAF7F0／#2D241F／#285B48</td></tr>
+            <tr><th scope="row">排版</th><td>左右分區：定位＋公告並列</td><td>置中概覽：先整體印象，公告放最後</td><td>雜誌主次：主故事 2/3＋側欄 1/3</td></tr>
+            <tr><th scope="row">優點</th><td>公告第一屏可見，查找快；長文好讀</td><td>氣氛鮮明、科技感強，適合招生展示</td><td>敘事感強，適合凸顯研究故事與成果</td></tr>
+            <tr><th scope="row">代價</th><td>個性較低，需靠內容與排版建立特色</td><td>公告被推到頁尾，查找任務較慢；亮青色按鈕需深色字</td><td>襯線字在小螢幕較密；主故事佔版面，入口下移</td></tr>
+            <tr><th scope="row">手機重排</th><td>雙欄 → 單欄，公告接在定位之後</td><td>本來就是單欄置中，變化最少</td><td>側欄移到主故事之後，加分隔線</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="scroll-hint">在窄螢幕上，表格可在框內左右捲動。</p>
+      <div class="callout" style="margin-top:var(--space)">
+        <p><strong>最後選擇：方案 A。</strong>本站最常見的任務是「找公告、找課程、找教師」，A 讓公告與內容入口在第一屏就出現，同時保持長文可讀；B 的深色配色則保留為主站的「深色主題」選項。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" aria-labelledby="live-h">
+    <div class="container">
+      <div class="section-head">
+        <div><span class="kicker">LIVE PREVIEW</span><h2 id="live-h">即時預覽：切換寬度</h2></div>
+        <p>選擇預覽寬度；超出畫面時可在框內捲動。也可以直接開啟各方案頁面，再調整瀏覽器寬度。</p>
+      </div>
+      <fieldset class="tabs-controls">
+        <legend>預覽寬度</legend>
+        <input type="radio" name="w" id="w360"><label for="w360">360px 手機</label>
+        <input type="radio" name="w" id="w768"><label for="w768">768px 平板</label>
+        <input type="radio" name="w" id="w1280" checked><label for="w1280">1280px 桌機</label>
+      </fieldset>
+      <div class="compare-frames">
+        <div class="frame-box"><h3>方案 A：極簡清晰 × 藍白 × 左右分區 <a class="small" href="plan-a.html">開新頁檢視 →</a></h3><div class="frame-scroll"><iframe src="plan-a.html" title="方案 A 預覽" loading="lazy"></iframe></div></div>
+        <div class="frame-box"><h3>方案 B：科技介面 × 深色青紫 × 置中概覽 <a class="small" href="plan-b.html">開新頁檢視 →</a></h3><div class="frame-scroll"><iframe src="plan-b.html" title="方案 B 預覽" loading="lazy"></iframe></div></div>
+        <div class="frame-box"><h3>方案 C：編輯敘事 × 米白森林綠 × 雜誌主次 <a class="small" href="plan-c.html">開新頁檢視 →</a></h3><div class="frame-scroll"><iframe src="plan-c.html" title="方案 C 預覽" loading="lazy"></iframe></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="shot-h">
+    <div class="container">
+      <h2 id="shot-h">截圖證據：360px 與 1280px</h2>
+      <p class="muted">以 Chromium 自動擷取各方案第一屏（含頁首）。點擊截圖可開啟原始檔。</p>
+      <div class="grid">
+        <figure class="card"><a href="shot-plan-a-1280.png"><img src="shot-plan-a-1280.png" alt="方案 A 於 1280px 寬度的首頁截圖" loading="lazy" width="1280" height="800"></a><figcaption class="small">方案 A · 1280px</figcaption></figure>
+        <figure class="card"><a href="shot-plan-b-1280.png"><img src="shot-plan-b-1280.png" alt="方案 B 於 1280px 寬度的首頁截圖" loading="lazy" width="1280" height="800"></a><figcaption class="small">方案 B · 1280px</figcaption></figure>
+        <figure class="card"><a href="shot-plan-c-1280.png"><img src="shot-plan-c-1280.png" alt="方案 C 於 1280px 寬度的首頁截圖" loading="lazy" width="1280" height="800"></a><figcaption class="small">方案 C · 1280px</figcaption></figure>
+      </div>
+      <div class="grid" style="margin-top:var(--space)">
+        <figure class="card"><a href="shot-plan-a-360.png"><img src="shot-plan-a-360.png" alt="方案 A 於 360px 寬度的首頁截圖" loading="lazy" width="360" height="760"></a><figcaption class="small">方案 A · 360px</figcaption></figure>
+        <figure class="card"><a href="shot-plan-b-360.png"><img src="shot-plan-b-360.png" alt="方案 B 於 360px 寬度的首頁截圖" loading="lazy" width="360" height="760"></a><figcaption class="small">方案 B · 360px</figcaption></figure>
+        <figure class="card"><a href="shot-plan-c-360.png"><img src="shot-plan-c-360.png" alt="方案 C 於 360px 寬度的首頁截圖" loading="lazy" width="360" height="760"></a><figcaption class="small">方案 C · 360px</figcaption></figure>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <section aria-labelledby="ft-about">
+        <h2 id="ft-about">元智大學 資訊工程學系</h2>
+        <p class="muted">從程式到系統，探索資訊科技的可能。<br>320 桃園市中壢區遠東路 135 號（元智大學）</p>
+        <p class="small muted">聯絡電話、信箱與辦公時間請以<a href="https://www.cse.yzu.edu.tw/" rel="noopener">官方系網</a>公告為準。</p>
+      </section>
+      <section aria-labelledby="ft-learn">
+        <h2 id="ft-learn">學習與研究</h2>
+        <ul><li><a href="courses.html">課程與學程</a></li><li><a href="faculty.html">師資</a></li><li><a href="research.html">研究與成果</a></li></ul>
+      </section>
+      <section aria-labelledby="ft-news">
+        <h2 id="ft-news">消息與資源</h2>
+        <ul><li><a href="news.html">消息與活動</a></li><li><a href="news.html#calendar">活動月曆</a></li><li><a href="resources.html">文件與表單</a></li><li><a href="resources.html#faq">常見問題</a></li></ul>
+      </section>
+      <section aria-labelledby="ft-project">
+        <h2 id="ft-project">本專題</h2>
+        <ul><li><a href="design.html">設計說明</a></li><li><a href="compare.html">A／B／C 方案比較</a></li><li><a href="YZU_CSE_Website_Redesign_Project_Plan.html">專題企劃書</a></li></ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Web Programming 系網重設計 Project · 教學示例，非官方網站</span>
+      <a href="#top">回到頂端 ↑</a>
+    </div>
+  </div>
+</footer>
+<a class="back-to-top" href="#top" aria-label="回到頂端">↑</a>
+<script src="main.js"></script>
+</body>
+</html>
