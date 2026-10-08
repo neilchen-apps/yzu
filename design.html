@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>設計說明｜系網重設計 Project</title>
+<meta name="description" content="系網重設計的問題觀察、設計理念、色彩角色、排版、互動規格、方案比較、測試與來源。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23005FCC'/%3E%3Ctext x='16' y='21' font-size='13' font-family='monospace' font-weight='700' fill='white' text-anchor='middle'%3ECSE%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+<script>try{var t=localStorage.getItem('cse-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">跳到主要內容</a>
+<div class="demo-bar" role="note"><div class="container"><strong>教學示例：</strong>本網站為 Web 程式設計課程「系網重設計」專題作品。教師、公告、活動與研究分類均為示例內容，不代表元智大學資訊工程學系正式資訊；正式資料請見 <a href="https://www.cse.yzu.edu.tw/" rel="noopener">官方系網</a>。</div></div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="元智大學資訊工程學系 首頁">
+      <span class="brand-mark" aria-hidden="true">CSE</span>
+      <span class="brand-text"><span class="brand-name">元智大學 資訊工程學系</span><span class="brand-sub">YZU · COMPUTER SCIENCE &amp; ENGINEERING</span></span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="主要導覽">
+      <ul>
+      <li><a href="index.html">首頁</a></li>
+      <li><a href="about.html">認識本系</a></li>
+      <li><a href="courses.html">課程與學程</a></li>
+      <li><a href="faculty.html">師資</a></li>
+      <li><a href="research.html">研究與成果</a></li>
+      <li><a href="news.html">消息與活動</a></li>
+      <li><a href="resources.html">資源與服務</a></li>
+      <li><a href="design.html" aria-current="page">設計說明</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle>◐ 自動</button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">選單</button>
+  </div>
+</header>
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="麵包屑"><ol><li><a href="index.html">首頁</a></li><li><span aria-current="page">設計說明</span></li></ol></nav>
+      <h1>設計說明 design.html</h1>
+      <p class="lead">觀察問題 → 提出理念 → 比較方案 → 實作呈現 → 測試修正。每個設計決策都寫下「目的、做法、取捨、驗證」。</p>
+    </div>
+  </section>
+
+  <div class="section">
+    <div class="container with-toc">
+      <nav class="toc" aria-labelledby="dtoc">
+        <h2 id="dtoc">章節</h2>
+        <ol>
+          <li><a href="#observe">1. 問題觀察</a></li>
+          <li><a href="#concept">2. 設計理念</a></li>
+          <li><a href="#color">3. 風格與配色</a></li>
+          <li><a href="#layout">4. 排版與 RWD</a></li>
+          <li><a href="#interaction">5. 互動規格</a></li>
+          <li><a href="#compare">6. 方案比較</a></li>
+          <li><a href="#test">7. 測試與修正</a></li>
+          <li><a href="#sources">8. 來源與 AI</a></li>
+          <li><a href="#files">9. 檔案清單</a></li>
+        </ol>
+      </nav>
+
+      <div>
+        <!-- 1 -->
+        <section class="toc-section" id="observe" aria-labelledby="observe-h">
+          <span class="kicker">01 / OBSERVE</span>
+          <h2 id="observe-h">問題觀察</h2>
+          <p class="prose">以「資訊系網站」常見的使用情境整理三個設計問題。這些是設計假設，需要在實際系網上逐頁確認並記錄查閱日期，不憑空批評官方網站。</p>
+          <div class="grid">
+            <div class="card"><span class="tag tag--important">問題 1・查找</span><h3 style="margin-top:8px">入口名稱無法預測內容</h3><p>「更多」「其他」等名稱讓讀者猜不到點進去會看到什麼。</p><p class="small muted">對應：理念 01 資訊組織</p></div>
+            <div class="card"><span class="tag tag--important">問題 2・層級</span><h3 style="margin-top:8px">所有區塊同等醒目</h3><p>公告、輪播、連結區塊都用強烈樣式，第一眼不知道從哪裡開始。</p><p class="small muted">對應：理念 02 視覺層級</p></div>
+            <div class="card"><span class="tag tag--important">問題 3・裝置</span><h3 style="margin-top:8px">手機只是把桌面縮小</h3><p>寬表格撐破頁面、雙欄變得過窄，公告標題被截斷。</p><p class="small muted">對應：理念 08 響應式</p></div>
+          </div>
+        </section>
+
+        <!-- 2 -->
+        <section class="toc-section" id="concept" aria-labelledby="concept-h">
+          <span class="kicker">02 / CONCEPT</span>
+          <h2 id="concept-h">設計理念</h2>
+          <div class="prose">
+            <p><strong>核心句：</strong>讓訪客在三秒內知道「這個系在做什麼」，在三次點擊內找到課程、教師或公告。</p>
+            <p>導覽依<strong>內容主題</strong>組織，不做身分分流。八類內容合併為六個頁面：</p>
+          </div>
+          <div class="table-wrap" tabindex="0" role="region" aria-labelledby="ia-cap">
+            <table>
+              <caption id="ia-cap">資訊架構：八類內容 → 六個內容頁</caption>
+              <thead><tr><th scope="col">頁面</th><th scope="col">涵蓋內容類別</th><th scope="col">主要版型</th><th scope="col">主要互動</th></tr></thead>
+              <tbody>
+                <tr><th scope="row"><a href="about.html">認識本系</a></th><td>系所簡介、聯絡</td><td>長頁敘事＋頁內目錄</td><td>錨點目錄、目前段落標示</td></tr>
+                <tr><th scope="row"><a href="courses.html">課程與學程</a></th><td>課程</td><td>學年分頁＋總表</td><td>radio 學年切換、課程搜尋</td></tr>
+                <tr><th scope="row"><a href="faculty.html">師資</a></th><td>師資</td><td>卡片網格</td><td>radio 領域篩選、FAQ</td></tr>
+                <tr><th scope="row"><a href="research.html">研究與成果</a></th><td>研究</td><td>左右分區卡片＋水平探索</td><td>scroll-snap 水平卡片</td></tr>
+                <tr><th scope="row"><a href="news.html">消息與活動</a></th><td>公告、活動</td><td>公告優先清單＋月曆</td><td>搜尋篩選、月曆換月</td></tr>
+                <tr><th scope="row"><a href="resources.html">資源與服務</a></th><td>資源</td><td>表格＋FAQ</td><td>details FAQ</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3 style="margin-top:var(--space)">首頁閱讀順序（第一眼的三件事）</h3>
+          <ol class="steps">
+            <li><h3>系名＋一句定位</h3><p>「從程式到系統，探索資訊科技的可能。」</p></li>
+            <li><h3>常用查找入口</h3><p>課程地圖、找教師、公告、文件、FAQ，名稱直接描述目的地。</p></li>
+            <li><h3>內容主題卡片</h3><p>六張一致卡片，之後才是消息、研究與學習路徑。</p></li>
+          </ol>
+        </section>
+
+        <!-- 3 -->
+        <section class="toc-section" id="color" aria-labelledby="color-h">
+          <span class="kicker">03 / STYLE &amp; COLOR</span>
+          <h2 id="color-h">風格與配色</h2>
+          <p class="prose">先定義顏色角色，再指定到元件。所有顏色都寫成 CSS 變數（<code>style.css</code> 第 1 節）；方案 B、C 與深色主題只是覆寫同一組變數，元件程式碼完全共用。</p>
+          <h3>主站色彩角色（方案 A：藍白清晰）</h3>
+          <div class="swatches">
+            <div class="swatch"><div class="swatch-chip" style="background:#F5F7FA"></div><div class="swatch-body"><strong>--bg</strong> 底色<br><code>#F5F7FA</code></div></div>
+            <div class="swatch"><div class="swatch-chip" style="background:#FFFFFF"></div><div class="swatch-body"><strong>--surface</strong> 卡片表面<br><code>#FFFFFF</code></div></div>
+            <div class="swatch"><div class="swatch-chip" style="background:#172B4D"></div><div class="swatch-body"><strong>--text</strong> 正文<br><code>#172B4D</code></div></div>
+            <div class="swatch"><div class="swatch-chip" style="background:#44546F"></div><div class="swatch-body"><strong>--muted</strong> 次要文字<br><code>#44546F</code></div></div>
+            <div class="swatch"><div class="swatch-chip" style="background:#005FCC"></div><div class="swatch-body"><strong>--accent</strong> 連結／主要按鈕<br><code>#005FCC</code></div></div>
+            <div class="swatch"><div class="swatch-chip" style="background:#A34700"></div><div class="swatch-body"><strong>--highlight</strong> 截止日／重要<br><code>#A34700</code></div></div>
+          </div>
+
+          <h3 style="margin-top:var(--space)">實測對比（WCAG 2.2 SC 1.4.3，一般文字目標 ≥ 4.5:1）</h3>
+          <div class="table-wrap" tabindex="0" role="region" aria-labelledby="cr-cap">
+            <table>
+              <caption id="cr-cap">以相對亮度公式計算的前景／背景對比</caption>
+              <thead><tr><th scope="col">色盤</th><th scope="col">組合</th><th scope="col">前景／背景</th><th scope="col">對比</th><th scope="col">結果</th></tr></thead>
+              <tbody>
+                <tr><th scope="row" rowspan="6">A 藍白清晰</th><td>正文／底色</td><td><code>#172B4D／#F5F7FA</code></td><td>13.14:1</td><td><span class="tag tag--ok">通過</span></td></tr>
+                <tr><td>次要文字／表面</td><td><code>#44546F／#FFFFFF</code></td><td>7.65:1</td><td><span class="tag tag--ok">通過</span></td></tr>
+                <tr><td>連結／表面</td><td><code>#005FCC／#FFFFFF</code></td><td>5.98:1</td><td><span class="tag tag--ok">通過</span></td></tr>
+                <tr><td>按鈕字／主色</td><td><code>#FFFFFF／#005FCC</code></td><td>5.98:1</td><td><span class="tag tag--ok">通過</span></td></tr>
+                <tr><td>重要標記／重點底</td><td><code>#A34700／#FFF1E5</code></td><td>5.48:1</td><td><span class="tag tag--ok">通過</span></td></tr>
+                <tr><td>成功標記／成功底</td><td><code>#1F6F43／#E6F4EC</code></td><td>5.43:1</td><td><span class="tag tag--ok">通過</span></td></tr>
+                <tr><th scope="row" rowspan="4">B 深色青紫</th><td>正文／底色</td><td><code>#F1F5F9／#0B1220</code></td><td>17.09:1</td><td><span class="tag tag--ok">通過</span></td></tr>
+                <tr><td>次要文字／表面</td><td><code>#A9B6C8／#111A2E</code></td><td>8.43:1</td><td><span class="tag tag--ok">通過</span></td></tr>
+                <tr><td>主色／表面</td><td><code>#67E8F9／#111A2E</code></td><td>11.96:1</td><td><span class="tag tag--ok">通過</span></td></tr>
+                <tr><td>按鈕字／亮青主色</td><td><code>#081321／#67E8F9</code></td><td>12.87:1</td><td><span class="tag tag--ok">通過</span>（亮色按鈕改用深色字）</td></tr>
+                <tr><th scope="row" rowspan="4">C 米白森林綠</th><td>正文／底色</td><td><code>#2D241F／#FAF7F0</code></td><td>14.18:1</td><td><span class="tag tag--ok">通過</span></td></tr>
+                <tr><td>次要文字／次表面</td><td><code>#5C5048／#F1ECE0</code></td><td>6.61:1</td><td><span class="tag tag--ok">通過</span></td></tr>
+                <tr><td>按鈕字／主色</td><td><code>#FFFFFF／#285B48</code></td><td>7.84:1</td><td><span class="tag tag--ok">通過</span></td></tr>
+                <tr><td>陶土重點／重點底</td><td><code>#A4452A／#F8E6DD</code></td><td>5.01:1</td><td><span class="tag tag--ok">通過</span></td></tr>
+                <tr><th scope="row">反例</th><td>低對比灰字</td><td><code>#9AA8B7／#FFFFFF</code></td><td>2.43:1</td><td><span class="tag tag--important">不通過・不採用</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="small muted">對比通過只代表色彩組合符合 SC 1.4.3，不等於整站已符合完整無障礙規範。顏色從不單獨表示狀態：「重要」「截止日」「通過」都同時寫出文字。</p>
+
+          <h3 style="margin-top:var(--space)">字體與元件規則</h3>
+          <div class="table-wrap" tabindex="0" role="region" aria-labelledby="type-cap">
+            <table>
+              <caption id="type-cap">字體、框線、圓角、陰影的角色</caption>
+              <thead><tr><th scope="col">項目</th><th scope="col">設定</th><th scope="col">理由</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">正文</th><td>系統字體、17px、行高 1.8、行長上限 42em</td><td>中文長段落舒適；200% 縮放時仍不需水平捲動</td></tr>
+                <tr><th scope="row">字級階層</th><td>1.25 比例：17 → 20 → 25 → 31 → clamp(32–49)px</td><td>主標題與次標題有明確差距，但不過度放大</td></tr>
+                <tr><th scope="row">按鈕</th><td>主要：實心主色；次要：外框。最小高度 44px</td><td>相同功能同樣式；觸控目標足夠大</td></tr>
+                <tr><th scope="row">卡片</th><td>同一 <code>.card</code> class；可點擊卡片加 <code>.card-link</code></td><td>並列資訊一致；hover 與 focus 回饋相同</td></tr>
+                <tr><th scope="row">標籤</th><td><code>.tag</code>／<code>.tag--important</code>／<code>.tag--ok</code></td><td>顏色＋文字＋外框三重提示</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 4 -->
+        <section class="toc-section" id="layout" aria-labelledby="layout-h">
+          <span class="kicker">04 / LAYOUT &amp; RWD</span>
+          <h2 id="layout-h">排版與 RWD</h2>
+          <div class="grid grid--2">
+            <div class="card"><h3>內容關係決定版型</h3><ul><li>並列（研究方向、教師）→ 卡片網格</li><li>時間（公告）→ 日期在左的清單</li><li>先後（學習路徑）→ 編號步驟</li><li>長篇（系所介紹）→ 單欄＋頁內目錄</li></ul></div>
+            <div class="card"><h3>斷點（依內容擠壓處設定）</h3><ul><li>≤ 1000px：四欄卡片 → 兩欄</li><li>≤ 900px：雙欄 hero、目錄 → 單欄；目錄改為可換行標籤</li><li>≤ 880px：導覽收合為「選單」按鈕</li><li>≤ 540px：所有卡片 → 單欄</li></ul></div>
+          </div>
+          <h3 style="margin-top:var(--space)">關鍵 CSS</h3>
+          <pre><code id="grid-code">.grid { display: grid; gap: var(--space);
+        grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 800px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 540px) { .grid { grid-template-columns: 1fr; } }
+
+/* 寬表格只在自己的容器中水平捲動，整頁不溢出 */
+.table-wrap { overflow-x: auto; }
+table { min-width: 640px; }</code></pre>
+          <p><button class="btn btn--ghost btn--sm js-only" type="button" data-copy="#grid-code">複製程式碼</button></p>
+          <div class="callout">
+            <p><strong>修正紀錄：</strong>第一版在 360px 寬度時「認識本系」與「消息與活動」出現整頁水平捲動。原因是單欄 grid 使用 <code>1fr</code>，其最小寬度等於內部表格的 640px。改為 <code>minmax(0, 1fr)</code> 後，表格只在 <code>.table-wrap</code> 內捲動。</p>
+          </div>
+        </section>
+
+        <!-- 5 -->
+        <section class="toc-section" id="interaction" aria-labelledby="int-h">
+          <span class="kicker">05 / INTERACTION</span>
+          <h2 id="int-h">互動規格</h2>
+          <p class="prose">規格格式：目的 → 觸發 → 狀態 → 回饋 → 返回／關閉 → 鍵盤與手機。前五項只用 HTML＋CSS；後四項為 JavaScript 漸進強化，沒有 JS 時內容仍完整可讀。</p>
+          <div class="table-wrap" tabindex="0" role="region" aria-labelledby="int-cap">
+            <table>
+              <caption id="int-cap">互動規格表</caption>
+              <thead><tr><th scope="col">互動</th><th scope="col">技術</th><th scope="col">目的</th><th scope="col">觸發／狀態／回饋</th><th scope="col">返回</th><th scope="col">鍵盤／手機</th></tr></thead>
+              <tbody>
+                <tr><th scope="row"><a href="resources.html#faq">FAQ 展開</a></th><td>details／summary</td><td>先看問題，再選擇閱讀細節</td><td>點問題；＋／－符號與「已展開／點擊展開」文字</td><td>再點一次收合</td><td>Tab＋Enter／Space；觸控點擊</td></tr>
+                <tr><th scope="row"><a href="courses.html#map">學年切換</a></th><td>原生 radio＋:has()</td><td>一次只看一個學年，降低資訊量</td><td>選中標籤變實心並加 ✓</td><td>選其他學年</td><td>方向鍵切換同組 radio</td></tr>
+                <tr><th scope="row"><a href="faculty.html">領域篩選</a></th><td>原生 radio＋:has()</td><td>依研究興趣縮小教師範圍</td><td>同上；不支援時列出全部</td><td>選「全部」</td><td>方向鍵；按鈕可換行</td></tr>
+                <tr><th scope="row"><a href="index.html">卡片 hover／focus</a></th><td>:hover／:focus-visible</td><td>提示整張卡片可點擊</td><td>上移 3px、框線變主色、陰影加深；文字始終可見</td><td>—</td><td>Tab 焦點同樣回饋；減少動態時取消位移</td></tr>
+                <tr><th scope="row"><a href="research.html#showcase">水平成果探索</a></th><td>overflow-x＋scroll-snap</td><td>有限空間保留作品序列</td><td>標明「可左右捲動」；不自動播放</td><td>—</td><td>聚焦後方向鍵；觸控滑動</td></tr>
+                <tr><th scope="row"><a href="news.html">公告搜尋篩選</a></th><td>JS</td><td>縮小公告範圍</td><td>即時顯示「共 N 筆，顯示 M 筆」；無結果提示</td><td>「重設」按鈕</td><td>表單元件皆有 label；結果數由螢幕閱讀器朗讀</td></tr>
+                <tr><th scope="row"><a href="news.html#calendar">月曆換月</a></th><td>JS＋table＋錨點</td><td>把日期與活動連起來</td><td>顯示目前月份；第一／最後月時按鈕停用</td><td>上個月／下個月</td><td>手機改讀右側清單；點日期跳到清單並標示</td></tr>
+                <tr><th scope="row">主題切換</th><td>CSS 變數＋JS</td><td>提供深色閱讀選項</td><td>按鈕文字顯示目前主題；記住偏好</td><td>再按切回</td><td>按鈕可聚焦；預設跟隨系統</td></tr>
+                <tr><th scope="row">手機選單</th><td>JS＋aria-expanded</td><td>窄螢幕節省空間</td><td>「選單／關閉選單」文字；展開後焦點移到第一個連結</td><td>Esc 或再按一次</td><td>無 JS 時導覽直接換行顯示</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 6 -->
+        <section class="toc-section" id="compare" aria-labelledby="cmp-h">
+          <span class="kicker">06 / COMPARE</span>
+          <h2 id="cmp-h">方案比較</h2>
+          <p class="prose"><strong>控制變因：</strong>三個方案使用完全相同的核心內容（系名定位、六個入口、三則公告、四個研究方向），只改風格、配色與排版。</p>
+          <div class="grid">
+            <a class="card card-link" href="plan-a.html"><span class="tag tag--ok">已採用</span><h3 style="margin-top:8px">方案 A：極簡清晰</h3><p>藍白清晰 × 左右分區。公告第一屏可見，查找任務最快。</p><span class="more">開啟方案 A →</span></a>
+            <a class="card card-link" href="plan-b.html"><span class="tag">備選</span><h3 style="margin-top:8px">方案 B：科技介面</h3><p>深色青紫 × 置中概覽。氣氛最鮮明，但公告被推到最後。</p><span class="more">開啟方案 B →</span></a>
+            <a class="card card-link" href="plan-c.html"><span class="tag">備選</span><h3 style="margin-top:8px">方案 C：編輯敘事</h3><p>米白森林綠 × 雜誌主次。適合研究故事，入口位置較低。</p><span class="more">開啟方案 C →</span></a>
+          </div>
+          <p style="margin-top:var(--space)"><a class="btn" href="compare.html">開啟並排比較與 360／768／1280 預覽</a></p>
+        </section>
+
+        <!-- 7 -->
+        <section class="toc-section" id="test" aria-labelledby="test-h">
+          <span class="kicker">07 / TEST</span>
+          <h2 id="test-h">測試與修正</h2>
+          <h3>已完成的自動檢查</h3>
+          <ul>
+            <li>以 Chromium 在 360／768／1280px 開啟全部 12 個頁面：無整頁水平溢出、無 JavaScript 錯誤、所有頁內錨點都有對應 id。</li>
+            <li>色彩對比：全部正式組合 ≥ 4.5:1（見第 3 節）。</li>
+            <li>截圖：三方案 360／1280px 共六張，主站 768px 一張（<a href="compare.html">方案比較頁</a>、<a href="shot-main-768.png">主站 768px</a>）。</li>
+          </ul>
+          <h3>同學測試任務（待填寫）</h3>
+          <p class="muted">以下為紀錄格式；實際結果需由兩位同學操作後填入，不預先編造測試結果。</p>
+          <div class="table-wrap" tabindex="0" role="region" aria-labelledby="ut-cap">
+            <table>
+              <caption id="ut-cap">查找與互動測試紀錄表</caption>
+              <thead><tr><th scope="col">任務</th><th scope="col">起點</th><th scope="col">成功條件</th><th scope="col">同學 1</th><th scope="col">同學 2</th><th scope="col">卡住位置／修正</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">找到大三上的必修課</th><td>首頁</td><td>到達課程地圖並切到大三</td><td></td><td></td><td></td></tr>
+                <tr><th scope="row">找一位網路與安全領域的教師</th><td>首頁</td><td>在師資頁完成篩選</td><td></td><td></td><td></td></tr>
+                <tr><th scope="row">找到最近的截止日</th><td>首頁</td><td>說出日期與事項</td><td></td><td></td><td></td></tr>
+                <tr><th scope="row">只用鍵盤展開一則 FAQ</th><td>資源頁</td><td>Tab＋Enter 完成</td><td></td><td></td><td></td></tr>
+                <tr><th scope="row">手機上查看 11 月活動</th><td>消息頁（360px）</td><td>找到活動清單</td><td></td><td></td><td></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3 style="margin-top:var(--space)">已知限制</h3>
+          <ul>
+            <li>radio 分類切換使用 <code>:has()</code>；極舊瀏覽器會改為直接列出全部內容（已用 <code>@supports</code> 處理）。</li>
+            <li>教師、公告、課程為示例資料，正式上線前需依官方來源逐項替換並記錄查閱日期。</li>
+            <li>月曆只示範兩個月份；正式版需從資料來源產生。</li>
+          </ul>
+        </section>
+
+        <!-- 8 -->
+        <section class="toc-section" id="sources" aria-labelledby="src-h">
+          <span class="kicker">08 / SOURCES &amp; AI</span>
+          <h2 id="src-h">來源與 AI 協作紀錄</h2>
+          <h3>技術與內容來源</h3>
+          <ul>
+            <li><a href="YZU_CSE_Website_Redesign_Project_Plan.html">本課專題企劃書：好的資訊系網站怎麼設計？</a>（設計理念、色盤、評分）</li>
+            <li><a href="https://www.cse.yzu.edu.tw/" rel="noopener">元智大學資訊工程學系官方網站</a>（內容來源入口；本站未複製其正式資料）</li>
+            <li><a href="https://www.w3.org/WAI/tutorials/page-structure/" rel="noopener">W3C：Page Structure Tutorial</a></li>
+            <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html" rel="noopener">W3C：SC 1.4.3 Contrast (Minimum)</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details" rel="noopener">MDN：details</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible" rel="noopener">:focus-visible</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type" rel="noopener">scroll-snap-type</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" rel="noopener">prefers-reduced-motion</a></li>
+          </ul>
+          <h3>AI 協作</h3>
+          <p>本網站的程式碼與文案初稿由 AI（Claude）依專題企劃書產生。依企劃書要求，請自行補上至少三筆紀錄：</p>
+          <div class="table-wrap" tabindex="0" role="region" aria-labelledby="ai-cap">
+            <table>
+              <caption id="ai-cap">AI 協作紀錄表</caption>
+              <thead><tr><th scope="col">#</th><th scope="col">原問題／提示</th><th scope="col">AI 建議</th><th scope="col">本人採用與修改</th><th scope="col">測試結果</th><th scope="col">自己的理解</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">1</th><td>依企劃書產生三方案與主站</td><td>A／B／C 共用一組 CSS 變數，方案只覆寫變數</td><td></td><td></td><td></td></tr>
+                <tr><th scope="row">2</th><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><th scope="row">3</th><td></td><td></td><td></td><td></td><td></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- 9 -->
+        <section class="toc-section" id="files" aria-labelledby="files-h">
+          <span class="kicker">09 / FILES</span>
+          <h2 id="files-h">檔案清單（全部放在同一層資料夾）</h2>
+          <div class="table-wrap" tabindex="0" role="region" aria-labelledby="f-cap">
+            <table>
+              <caption id="f-cap">專題檔案</caption>
+              <thead><tr><th scope="col">檔案</th><th scope="col">內容</th></tr></thead>
+              <tbody>
+                <tr><th scope="row"><a href="index.html">index.html</a></th><td>主站首頁（方案 A 延伸）</td></tr>
+                <tr><th scope="row">about／courses／faculty／research／news／resources.html</th><td>六個內容頁，涵蓋八類內容</td></tr>
+                <tr><th scope="row">plan-a／plan-b／plan-c.html</th><td>三個首頁方案</td></tr>
+                <tr><th scope="row"><a href="compare.html">compare.html</a></th><td>方案並排比較、寬度預覽、截圖</td></tr>
+                <tr><th scope="row">design.html</th><td>本設計說明</td></tr>
+                <tr><th scope="row">style.css</th><td>共用樣式與全部設計變數</td></tr>
+                <tr><th scope="row">main.js</th><td>漸進強化腳本（主題、選單、搜尋、月曆、目錄）</td></tr>
+                <tr><th scope="row">shot-*.png</th><td>360／768／1280px 截圖證據</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <section aria-labelledby="ft-about">
+        <h2 id="ft-about">元智大學 資訊工程學系</h2>
+        <p class="muted">從程式到系統，探索資訊科技的可能。<br>320 桃園市中壢區遠東路 135 號（元智大學）</p>
+        <p class="small muted">聯絡電話、信箱與辦公時間請以<a href="https://www.cse.yzu.edu.tw/" rel="noopener">官方系網</a>公告為準。</p>
+      </section>
+      <section aria-labelledby="ft-learn">
+        <h2 id="ft-learn">學習與研究</h2>
+        <ul><li><a href="courses.html">課程與學程</a></li><li><a href="faculty.html">師資</a></li><li><a href="research.html">研究與成果</a></li></ul>
+      </section>
+      <section aria-labelledby="ft-news">
+        <h2 id="ft-news">消息與資源</h2>
+        <ul><li><a href="news.html">消息與活動</a></li><li><a href="news.html#calendar">活動月曆</a></li><li><a href="resources.html">文件與表單</a></li><li><a href="resources.html#faq">常見問題</a></li></ul>
+      </section>
+      <section aria-labelledby="ft-project">
+        <h2 id="ft-project">本專題</h2>
+        <ul><li><a href="design.html">設計說明</a></li><li><a href="compare.html">A／B／C 方案比較</a></li><li><a href="YZU_CSE_Website_Redesign_Project_Plan.html">專題企劃書</a></li></ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> Web Programming 系網重設計 Project · 教學示例，非官方網站</span>
+      <a href="#top">回到頂端 ↑</a>
+    </div>
+  </div>
+</footer>
+<a class="back-to-top" href="#top" aria-label="回到頂端">↑</a>
+<script src="main.js"></script>
+</body>
+</html>
