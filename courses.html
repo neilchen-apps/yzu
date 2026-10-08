@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>課程與學程｜元智大學 資訊工程學系</title>
-<meta name="description" content="依學年整理的課程地圖、必選修結構與可搜尋課程總表。">
+<meta name="description" content="115 學年度入學學士班課程地圖、畢業學分結構與可搜尋課程總表。">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23005FCC'/%3E%3Ctext x='16' y='21' font-size='13' font-family='monospace' font-weight='700' fill='white' text-anchor='middle'%3ECSE%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 <script>try{var t=localStorage.getItem('cse-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
 <body id="top">
 <a class="skip-link" href="#main">跳到主要內容</a>
-<div class="demo-bar" role="note"><div class="container"><strong>教學示例：</strong>本網站為 Web 程式設計課程「系網重設計」專題作品。教師、公告、活動與研究分類均為示例內容，不代表元智大學資訊工程學系正式資訊；正式資料請見 <a href="https://www.cse.yzu.edu.tw/" rel="noopener">官方系網</a>。</div></div>
+<div class="demo-bar" role="note"><div class="container"><strong>課程專題作品：</strong>本站為 Web 程式設計「系網重設計」專題，內容整理自<a href="https://www.cse.yzu.edu.tw/" rel="noopener">元智資工官方系網</a>（查閱日期 2026-10-08），並非官方網站；最新與正式資訊請以官方系網為準。</div></div>
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="index.html" aria-label="元智大學資訊工程學系 首頁">
@@ -39,15 +39,30 @@
     <div class="container">
       <nav class="breadcrumb" aria-label="麵包屑"><ol><li><a href="index.html">首頁</a></li><li><span aria-current="page">課程與學程</span></li></ol></nav>
       <h1>課程與學程</h1>
-      <p class="lead">先用課程地圖理解四年的先後順序，再用總表搜尋特定課程。必修與選修同時以文字與顏色標示。</p>
+      <p class="lead">依 115 學年度入學學士班修業規定整理的課程地圖：先看各學年的先後順序，再用總表依課名或課號搜尋。系必修與系選修同時以文字與顏色標示。</p>
     </div>
   </section>
 
-  <section class="section" id="map" aria-labelledby="map-h">
+  <section class="section" aria-labelledby="credit-h">
+    <div class="container">
+      <h2 id="credit-h">畢業學分結構（128 學分）</h2>
+      <ul class="stats stats--compact">
+        <li><strong>27</strong><span>共同必修及通識</span></li>
+        <li><strong>4</strong><span>院必修：基礎程式設計 C++ 實習</span></li>
+        <li><strong>60</strong><span>系必修</span></li>
+        <li><strong>37</strong><span>選修（系選修至少 27）</span></li>
+      </ul>
+      <div class="callout" style="margin-top:var(--space)">
+        <p><strong>其他畢業條件：</strong>須通過「大學程式能力檢定（CPE）」；115 學年度起入學者另須符合「跨域學習、國際交換、產業實習」三擇一。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="map" aria-labelledby="map-h">
     <div class="container">
       <div class="section-head">
-        <div><span class="kicker">COURSE MAP</span><h2 id="map-h">課程地圖：依學年切換</h2></div>
-        <p>點選學年（或用 Tab 移到選項後以方向鍵切換），下方只顯示該學年的課程。</p>
+        <div><span class="kicker">COURSE MAP · 115 學年度入學</span><h2 id="map-h">課程地圖：依學年切換</h2></div>
+        <p>點選學年（或用 Tab 移到選項後以方向鍵切換），下方只顯示該學年的系必修與系選修課程。</p>
       </div>
       <div class="tabs">
         <fieldset class="tabs-controls">
@@ -57,171 +72,338 @@
           <input type="radio" name="year" id="y3"><label for="y3">大三</label>
           <input type="radio" name="year" id="y4"><label for="y4">大四</label>
         </fieldset>
-    <div class="tab-panel" id="panel-y1">
-      <h3 class="panel-title">大一：打好程式與數學基礎</h3>
-      <div class="grid grid--2">
-      <div class="card">
-        <h4>上學期</h4>
-        <ul class="event-list">
-          <li><div class="tags"><span class="tag tag--important">必修</span><span class="tag tag--accent">基礎</span><span class="tag">3 學分</span></div><strong>計算機概論</strong><br><span class="muted">認識電腦運作、資料表示與資訊科技的全貌。</span></li>
-          <li><div class="tags"><span class="tag tag--important">必修</span><span class="tag tag--accent">基礎</span><span class="tag">3 學分</span></div><strong>程式設計（一）</strong><br><span class="muted">以 C/C++ 學習變數、流程控制、函式與陣列。</span></li>
-          <li><div class="tags"><span class="tag tag--important">必修</span><span class="tag tag--accent">數學</span><span class="tag">3 學分</span></div><strong>微積分（一）</strong><br><span class="muted">極限、微分與積分的概念與應用。</span></li>
-        </ul>
+      <div class="tab-panel" id="panel-y1">
+        <h3 class="panel-title">大一：程式與數學基礎</h3>
+        
+        <div class="grid grid--2">
+        <div class="card">
+          <h4>上學期（3 門系必修、4 門系選修）</h4>
+          <ul class="event-list">
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>程式設計（一）</strong> <span class="muted small">CS106</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>資訊概論</strong> <span class="muted small">CS140</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">數學基礎</span></div><strong>微積分（一）</strong> <span class="muted small">CS147</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">數學基礎</span></div><strong>普通物理</strong> <span class="muted small">CS152</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">2 學分</span><span class="tag tag--accent">生醫資訊</span></div><strong>醫學工程概論（一）</strong> <span class="muted small">CS154</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">實習／專題／其他</span></div><strong>資訊科技英文導論</strong> <span class="muted small">CS158</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>Web程式設計</strong> <span class="muted small">CS380</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>下學期（4 門系必修、5 門系選修）</h4>
+          <ul class="event-list">
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">數學基礎</span></div><strong>離散數學</strong> <span class="muted small">CS107</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>程式設計（二）</strong> <span class="muted small">CS114</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">數學基礎</span></div><strong>微積分（二）</strong> <span class="muted small">CS148</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">系統與晶片</span></div><strong>電子電路學</strong> <span class="muted small">CS153</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">數學基礎</span></div><strong>普通物理學（下）</strong> <span class="muted small">CS145</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>網站程式設計實務</strong> <span class="muted small">CS151</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">2 學分</span><span class="tag tag--accent">生醫資訊</span></div><strong>醫學工程概論（二）</strong> <span class="muted small">CS155</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">2 學分</span><span class="tag tag--accent">生醫資訊</span></div><strong>醫療資訊學概論</strong> <span class="muted small">CS156</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>競技程式設計（一）</strong> <span class="muted small">CS157</span></li>
+          </ul>
+        </div>
+        </div>
       </div>
-      <div class="card">
-        <h4>下學期</h4>
-        <ul class="event-list">
-          <li><div class="tags"><span class="tag tag--important">必修</span><span class="tag tag--accent">基礎</span><span class="tag">3 學分</span></div><strong>程式設計（二）</strong><br><span class="muted">指標、結構、檔案處理與物件導向入門。</span></li>
-          <li><div class="tags"><span class="tag tag--important">必修</span><span class="tag tag--accent">數學</span><span class="tag">3 學分</span></div><strong>離散數學</strong><br><span class="muted">邏輯、集合、組合、圖論，為演算法打底。</span></li>
-          <li><div class="tags"><span class="tag tag--important">必修</span><span class="tag tag--accent">系統</span><span class="tag">3 學分</span></div><strong>數位邏輯設計</strong><br><span class="muted">布林代數、組合與序向電路設計。</span></li>
-        </ul>
+      <div class="tab-panel" id="panel-y2">
+        <h3 class="panel-title">大二：資料結構、計算機系統與網路核心</h3>
+        
+        <div class="grid grid--2">
+        <div class="card">
+          <h4>上學期（5 門系必修、8 門系選修）</h4>
+          <ul class="event-list">
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>資料結構</strong> <span class="muted small">CS203</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">系統與晶片</span></div><strong>數位系統設計</strong> <span class="muted small">CS204</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">系統與晶片</span></div><strong>數位系統實務</strong> <span class="muted small">CS206</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">網路與資安</span></div><strong>資料通訊概論</strong> <span class="muted small">CS229</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">數學基礎</span></div><strong>線性代數</strong> <span class="muted small">CS233</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">系統與晶片</span></div><strong>電子電路（二）</strong> <span class="muted small">CS235</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>視窗程式設計</strong> <span class="muted small">CS249</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>網路程式設計</strong> <span class="muted small">CS256</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">2 學分</span><span class="tag tag--accent">生醫資訊</span></div><strong>醫用放射治療概論</strong> <span class="muted small">CS258</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">2 學分</span><span class="tag tag--accent">生醫資訊</span></div><strong>精準醫療概論</strong> <span class="muted small">CS259</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>競技程式設計（二）</strong> <span class="muted small">CS261</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">2 學分</span><span class="tag tag--accent">實習／專題／其他</span></div><strong>科技英文</strong> <span class="muted small">CS419</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">數學基礎</span></div><strong>組合數學</strong> <span class="muted small">CS421</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>下學期（5 門系必修、8 門系選修）</h4>
+          <ul class="event-list">
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">數學基礎</span></div><strong>機率與統計</strong> <span class="muted small">CS226</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">系統與晶片</span></div><strong>組合語言與計算機組織</strong> <span class="muted small">CS250</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">系統與晶片</span></div><strong>作業系統概論</strong> <span class="muted small">CS305</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>演算法概論</strong> <span class="muted small">CS309</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">網路與資安</span></div><strong>無線網路概論</strong> <span class="muted small">CS335</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">數學基礎</span></div><strong>工程數學</strong> <span class="muted small">CS205</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>程式語言</strong> <span class="muted small">CS222</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">2 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>高等程式設計</strong> <span class="muted small">CS257</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">2 學分</span><span class="tag tag--accent">AI 與資料</span></div><strong>智慧醫療概論</strong> <span class="muted small">CS260</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>Java概論</strong> <span class="muted small">CS303</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>視窗程式設計（二）</strong> <span class="muted small">CS324</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">AI 與資料</span></div><strong>智慧型科技應用</strong> <span class="muted small">CS410</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">多媒體與互動</span></div><strong>多媒體技術與應用</strong> <span class="muted small">CS411</span></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div class="tab-panel" id="panel-y3">
+        <h3 class="panel-title">大三：專業方向與專業實習</h3>
+        <p class="callout small">三、四年級列於「系必修科目表」的課程，依修業規定採計至系必修 60 學分；實際採計方式請以官方修業規定為準。</p>
+        <div class="grid grid--2">
+        <div class="card">
+          <h4>上學期（8 門系必修、8 門系選修）</h4>
+          <ul class="event-list">
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">網路與資安</span></div><strong>計算機網路概論</strong> <span class="muted small">CS311</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">多媒體與互動</span></div><strong>計算機圖學概論</strong> <span class="muted small">CS314</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>編譯程式概論</strong> <span class="muted small">CS321</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>微型應用程式設計實務</strong> <span class="muted small">CS322</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">網路與資安</span></div><strong>雲端運算與服務</strong> <span class="muted small">CS337</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">網路與資安</span></div><strong>智慧物聯網</strong> <span class="muted small">CS349</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">系統與晶片</span></div><strong>超大型積體電路設計導論</strong> <span class="muted small">CS378</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">系統與晶片</span></div><strong>內嵌式系統設計與實習</strong> <span class="muted small">CS379</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">實習／專題／其他</span></div><strong>車載資料分析與服務</strong> <span class="muted small">CS304</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">數學基礎</span></div><strong>自動機理論概論</strong> <span class="muted small">CS319</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">網路與資安</span></div><strong>新型態網路</strong> <span class="muted small">CS328</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>R軟體與資料探勘</strong> <span class="muted small">CS333</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">生醫資訊</span></div><strong>生物學概論</strong> <span class="muted small">CS341</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">AI 與資料</span></div><strong>大數據創新應用專題</strong> <span class="muted small">CS343</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">AI 與資料</span></div><strong>人工智慧於臨床照護開發</strong> <span class="muted small">CS356</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">2 學分</span><span class="tag tag--accent">多媒體與互動</span></div><strong>醫學影像概論（一）</strong> <span class="muted small">CS383</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>下學期（12 門系必修、11 門系選修）</h4>
+          <ul class="event-list">
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">AI 與資料</span></div><strong>人工智慧概論</strong> <span class="muted small">CS310</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">系統與晶片</span></div><strong>微處理機系統設計</strong> <span class="muted small">CS320</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">多媒體與互動</span></div><strong>遊戲引擎理論與實務</strong> <span class="muted small">CS330</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">AI 與資料</span></div><strong>大數據科學導論</strong> <span class="muted small">CS332</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">系統與晶片</span></div><strong>積體電路設計自動化導論</strong> <span class="muted small">CS338</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>生物資訊概論</strong> <span class="muted small">CS340</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">實習／專題／其他</span></div><strong>資訊科技應用</strong> <span class="muted small">CS350</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>人工智慧輔助軟體開發</strong> <span class="muted small">CS351</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>軟體工程</strong> <span class="muted small">CS377</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>開放平台軟體</strong> <span class="muted small">CS381</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>敏捷軟體開發</strong> <span class="muted small">CS382</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">多媒體與互動</span></div><strong>多媒體系統概論</strong> <span class="muted small">CS401</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>連網型系統晶片之嵌入式軟體</strong> <span class="muted small">CS301</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">系統與晶片</span></div><strong>作業系統（二）</strong> <span class="muted small">CS302</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>UNIX系統概論</strong> <span class="muted small">CS312</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">多媒體與互動</span></div><strong>數位電視概論</strong> <span class="muted small">CS315</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">網路與資安</span></div><strong>電子商務概論</strong> <span class="muted small">CS329</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">網路與資安</span></div><strong>智慧聯網</strong> <span class="muted small">CS339</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">生醫資訊</span></div><strong>醫學概論</strong> <span class="muted small">CS346</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">2 學分</span><span class="tag tag--accent">多媒體與互動</span></div><strong>醫學影像概論（二）</strong> <span class="muted small">CS384</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">實習／專題／其他</span></div><strong>專業實習（一）</strong> <span class="muted small">CS400</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">實習／專題／其他</span></div><strong>專業實習（二）</strong> <span class="muted small">CS415</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">實習／專題／其他</span></div><strong>專題製作（一）</strong> <span class="muted small">CS416</span></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div class="tab-panel" id="panel-y4">
+        <h3 class="panel-title">大四：專題製作、進階選修與實習</h3>
+        <p class="callout small">三、四年級列於「系必修科目表」的課程，依修業規定採計至系必修 60 學分；實際採計方式請以官方修業規定為準。</p>
+        <div class="grid grid--2">
+        <div class="card">
+          <h4>上學期（4 門系必修、10 門系選修）</h4>
+          <ul class="event-list">
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">多媒體與互動</span></div><strong>人機互動設計概論</strong> <span class="muted small">CS313</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">AI 與資料</span></div><strong>資料庫系統概論</strong> <span class="muted small">CS352</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">網路與資安</span></div><strong>電腦與網路安全概論</strong> <span class="muted small">CS354</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">AI 與資料</span></div><strong>資料探勘</strong> <span class="muted small">CS412</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">程式與軟體</span></div><strong>3D動畫程式設計</strong> <span class="muted small">CS317</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">系統與晶片</span></div><strong>晶片設計與驗證實習</strong> <span class="muted small">CS408</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">實習／專題／其他</span></div><strong>專題製作（二）</strong> <span class="muted small">CS417</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">網路與資安</span></div><strong>網路實習（一）</strong> <span class="muted small">CS423</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">實習／專題／其他</span></div><strong>專業實習（三）</strong> <span class="muted small">CS426</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">實習／專題／其他</span></div><strong>專業實習（四）</strong> <span class="muted small">CS427</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">4 學分</span><span class="tag tag--accent">實習／專題／其他</span></div><strong>專題製作（三）</strong> <span class="muted small">CS428</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">AI 與資料</span></div><strong>智慧製造</strong> <span class="muted small">CS429</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">AI 與資料</span></div><strong>生成式AI導論</strong> <span class="muted small">CS431</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">AI 與資料</span></div><strong>智慧型機器人導論</strong> <span class="muted small">CS432</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>下學期（3 門系必修、5 門系選修）</h4>
+          <ul class="event-list">
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">網路與資安</span></div><strong>網路攻防</strong> <span class="muted small">CS355</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">多媒體與互動</span></div><strong>影像處理概論</strong> <span class="muted small">CS362</span></li>
+            <li><div class="tags"><span class="tag tag--important">系必修</span><span class="tag">3 學分</span><span class="tag tag--accent">系統與晶片</span></div><strong>量子計算概論</strong> <span class="muted small">CS430</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">數學基礎</span></div><strong>數值方法</strong> <span class="muted small">CS353</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">AI 與資料</span></div><strong>資料探勘實務</strong> <span class="muted small">CS406</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">系統與晶片</span></div><strong>晶片設計自動化實習</strong> <span class="muted small">CS409</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">3 學分</span><span class="tag tag--accent">網路與資安</span></div><strong>網路實習（二）</strong> <span class="muted small">CS424</span></li>
+            <li><div class="tags"><span class="tag">系選修</span><span class="tag">1 學分</span><span class="tag tag--accent">實習／專題／其他</span></div><strong>浸潤式資訊課程-國際經驗</strong> <span class="muted small">CS460</span></li>
+          </ul>
+        </div>
+        </div>
       </div>
       </div>
-    </div>
-    <div class="tab-panel" id="panel-y2">
-      <h3 class="panel-title">大二：建立資料結構與系統核心能力</h3>
-      <div class="grid grid--2">
-      <div class="card">
-        <h4>上學期</h4>
-        <ul class="event-list">
-          <li><div class="tags"><span class="tag tag--important">必修</span><span class="tag tag--accent">基礎</span><span class="tag">3 學分</span></div><strong>資料結構</strong><br><span class="muted">串列、堆疊、佇列、樹與圖的設計與分析。</span></li>
-          <li><div class="tags"><span class="tag tag--important">必修</span><span class="tag tag--accent">數學</span><span class="tag">3 學分</span></div><strong>線性代數</strong><br><span class="muted">矩陣、向量空間與特徵值，AI 與圖學的基礎。</span></li>
-          <li><div class="tags"><span class="tag tag--important">必修</span><span class="tag tag--accent">軟體</span><span class="tag">3 學分</span></div><strong>物件導向程式設計</strong><br><span class="muted">類別、繼承、多型與設計模式入門。</span></li>
-        </ul>
-      </div>
-      <div class="card">
-        <h4>下學期</h4>
-        <ul class="event-list">
-          <li><div class="tags"><span class="tag tag--important">必修</span><span class="tag tag--accent">系統</span><span class="tag">3 學分</span></div><strong>計算機組織</strong><br><span class="muted">CPU、記憶體階層與指令集架構。</span></li>
-          <li><div class="tags"><span class="tag tag--important">必修</span><span class="tag tag--accent">數學</span><span class="tag">3 學分</span></div><strong>機率與統計</strong><br><span class="muted">隨機變數、分布與估計，資料分析的語言。</span></li>
-          <li><div class="tags"><span class="tag">選修</span><span class="tag tag--accent">軟體</span><span class="tag">3 學分</span></div><strong>網頁程式設計</strong><br><span class="muted">HTML、CSS、JavaScript 與網站設計思考。</span></li>
-        </ul>
-      </div>
-      </div>
-    </div>
-    <div class="tab-panel" id="panel-y3">
-      <h3 class="panel-title">大三：系統、網路與專業方向</h3>
-      <div class="grid grid--2">
-      <div class="card">
-        <h4>上學期</h4>
-        <ul class="event-list">
-          <li><div class="tags"><span class="tag tag--important">必修</span><span class="tag tag--accent">基礎</span><span class="tag">3 學分</span></div><strong>演算法</strong><br><span class="muted">分治、動態規劃、貪婪法與複雜度分析。</span></li>
-          <li><div class="tags"><span class="tag tag--important">必修</span><span class="tag tag--accent">系統</span><span class="tag">3 學分</span></div><strong>作業系統</strong><br><span class="muted">行程、排程、同步、記憶體與檔案系統。</span></li>
-          <li><div class="tags"><span class="tag">選修</span><span class="tag tag--accent">軟體</span><span class="tag">3 學分</span></div><strong>資料庫系統</strong><br><span class="muted">關聯模型、SQL、正規化與交易處理。</span></li>
-        </ul>
-      </div>
-      <div class="card">
-        <h4>下學期</h4>
-        <ul class="event-list">
-          <li><div class="tags"><span class="tag tag--important">必修</span><span class="tag tag--accent">網路</span><span class="tag">3 學分</span></div><strong>計算機網路</strong><br><span class="muted">協定分層、TCP/IP 與網路程式設計。</span></li>
-          <li><div class="tags"><span class="tag">選修</span><span class="tag tag--accent">軟體</span><span class="tag">3 學分</span></div><strong>軟體工程</strong><br><span class="muted">需求、設計、測試與團隊開發流程。</span></li>
-          <li><div class="tags"><span class="tag">選修</span><span class="tag tag--accent">AI</span><span class="tag">3 學分</span></div><strong>人工智慧導論</strong><br><span class="muted">搜尋、推論與機器學習的基本方法。</span></li>
-        </ul>
-      </div>
-      </div>
-    </div>
-    <div class="tab-panel" id="panel-y4">
-      <h3 class="panel-title">大四：專題整合與進階選修</h3>
-      <div class="grid grid--2">
-      <div class="card">
-        <h4>上學期</h4>
-        <ul class="event-list">
-          <li><div class="tags"><span class="tag tag--important">必修</span><span class="tag tag--accent">專題</span><span class="tag">2 學分</span></div><strong>畢業專題（一）</strong><br><span class="muted">組隊定義問題、提出方法並完成原型。</span></li>
-          <li><div class="tags"><span class="tag">選修</span><span class="tag tag--accent">AI</span><span class="tag">3 學分</span></div><strong>機器學習</strong><br><span class="muted">監督式與非監督式學習、模型評估。</span></li>
-          <li><div class="tags"><span class="tag">選修</span><span class="tag tag--accent">網路</span><span class="tag">3 學分</span></div><strong>資訊安全</strong><br><span class="muted">密碼學基礎、系統與網路攻防概念。</span></li>
-        </ul>
-      </div>
-      <div class="card">
-        <h4>下學期</h4>
-        <ul class="event-list">
-          <li><div class="tags"><span class="tag tag--important">必修</span><span class="tag tag--accent">專題</span><span class="tag">2 學分</span></div><strong>畢業專題（二）</strong><br><span class="muted">完成作品、測試驗證並公開展示。</span></li>
-          <li><div class="tags"><span class="tag">選修</span><span class="tag tag--accent">AI</span><span class="tag">3 學分</span></div><strong>人機互動</strong><br><span class="muted">使用者研究、介面設計與可用性測試。</span></li>
-          <li><div class="tags"><span class="tag">選修</span><span class="tag tag--accent">系統</span><span class="tag">3 學分</span></div><strong>雲端與平行計算</strong><br><span class="muted">分散式系統、容器與平行程式設計。</span></li>
-        </ul>
-      </div>
-      </div>
-    </div>
-      </div>
-      <p class="small muted" style="margin-top:var(--space)">課程名稱、學分與開課學期為教學示例，選課請以學校課程查詢系統與當年度修業規定為準。</p>
+      <p class="small muted" style="margin-top:var(--space)">「方向」欄為本站依課名整理的分類，方便搜尋，非官方分類。官方備註：考量師資因素，部份課程可能無法正常開課。</p>
     </div>
   </section>
 
-  <section class="section section--alt" id="all" aria-labelledby="all-h">
+  <section class="section" id="all" aria-labelledby="all-h">
     <div class="container">
       <div class="section-head">
         <div><span class="kicker">ALL COURSES</span><h2 id="all-h">課程總表與搜尋</h2></div>
-        <p>輸入課名或關鍵字、選擇方向，結果數會即時更新；按「重設」回到全部課程。</p>
+        <p>輸入課名或課號（例如 CS203）、選擇方向，結果數會即時更新；按「重設」回到全部課程。</p>
       </div>
       <form class="filter-bar js-only" data-filter="#course-table" data-count="#course-count" data-empty="#course-empty" role="search" aria-label="搜尋課程">
-        <div class="field"><label for="cq">關鍵字</label><input id="cq" name="q" type="search" placeholder="例如：演算法、網路、AI" autocomplete="off"></div>
-        <div class="field"><label for="cc">方向／類別</label>
+        <div class="field"><label for="cq">關鍵字或課號</label><input id="cq" name="q" type="search" placeholder="例如：演算法、CS305、網路" autocomplete="off"></div>
+        <div class="field"><label for="cc">類別／方向</label>
           <select id="cc" name="cat">
             <option value="all">全部</option>
-            <option value="req">只看必修</option>
-            <option value="ele">只看選修</option>
-            <option value="basic">基礎</option><option value="math">數學</option><option value="sys">系統</option>
-            <option value="soft">軟體</option><option value="net">網路</option><option value="ai">AI</option><option value="cap">專題</option>
+            <option value="req">只看系必修</option>
+            <option value="ele">只看系選修</option>
+            <option value="math">數學基礎</option><option value="soft">程式與軟體</option><option value="sys">系統與晶片</option>
+            <option value="net">網路與資安</option><option value="ai">AI 與資料</option><option value="mm">多媒體與互動</option>
+            <option value="bio">生醫資訊</option><option value="other">實習／專題／其他</option>
           </select></div>
         <button class="btn" type="submit">搜尋</button>
         <button class="btn btn--ghost" type="reset">重設</button>
       </form>
       <p class="no-js-note">（搜尋功能需要 JavaScript；目前顯示完整課程總表。）</p>
-      <p class="result-count" id="course-count" aria-live="off"></p>
+      <p class="result-count" id="course-count"></p>
       <div class="table-wrap" tabindex="0" role="region" aria-labelledby="course-cap">
         <table id="course-table">
-          <caption id="course-cap">課程總表（示例）</caption>
-          <thead><tr><th scope="col">學期</th><th scope="col">課程</th><th scope="col">必／選</th><th scope="col">學分</th><th scope="col">方向</th><th scope="col">說明</th></tr></thead>
+          <caption id="course-cap">115 學年度入學 學士班系必修與系選修課程（共 103 筆）</caption>
+          <thead><tr><th scope="col">建議學期</th><th scope="col">課號</th><th scope="col">課程</th><th scope="col">類別</th><th scope="col">學分</th><th scope="col">方向</th></tr></thead>
           <tbody>
-          <tr data-cat="basic req"><td>大一上</td><th scope="row">計算機概論</th><td><span class="tag tag--important">必修</span></td><td>3</td><td>基礎</td><td>認識電腦運作、資料表示與資訊科技的全貌。</td></tr>
-          <tr data-cat="basic req"><td>大一上</td><th scope="row">程式設計（一）</th><td><span class="tag tag--important">必修</span></td><td>3</td><td>基礎</td><td>以 C/C++ 學習變數、流程控制、函式與陣列。</td></tr>
-          <tr data-cat="math req"><td>大一上</td><th scope="row">微積分（一）</th><td><span class="tag tag--important">必修</span></td><td>3</td><td>數學</td><td>極限、微分與積分的概念與應用。</td></tr>
-          <tr data-cat="basic req"><td>大一下</td><th scope="row">程式設計（二）</th><td><span class="tag tag--important">必修</span></td><td>3</td><td>基礎</td><td>指標、結構、檔案處理與物件導向入門。</td></tr>
-          <tr data-cat="math req"><td>大一下</td><th scope="row">離散數學</th><td><span class="tag tag--important">必修</span></td><td>3</td><td>數學</td><td>邏輯、集合、組合、圖論，為演算法打底。</td></tr>
-          <tr data-cat="sys req"><td>大一下</td><th scope="row">數位邏輯設計</th><td><span class="tag tag--important">必修</span></td><td>3</td><td>系統</td><td>布林代數、組合與序向電路設計。</td></tr>
-          <tr data-cat="basic req"><td>大二上</td><th scope="row">資料結構</th><td><span class="tag tag--important">必修</span></td><td>3</td><td>基礎</td><td>串列、堆疊、佇列、樹與圖的設計與分析。</td></tr>
-          <tr data-cat="math req"><td>大二上</td><th scope="row">線性代數</th><td><span class="tag tag--important">必修</span></td><td>3</td><td>數學</td><td>矩陣、向量空間與特徵值，AI 與圖學的基礎。</td></tr>
-          <tr data-cat="soft req"><td>大二上</td><th scope="row">物件導向程式設計</th><td><span class="tag tag--important">必修</span></td><td>3</td><td>軟體</td><td>類別、繼承、多型與設計模式入門。</td></tr>
-          <tr data-cat="sys req"><td>大二下</td><th scope="row">計算機組織</th><td><span class="tag tag--important">必修</span></td><td>3</td><td>系統</td><td>CPU、記憶體階層與指令集架構。</td></tr>
-          <tr data-cat="math req"><td>大二下</td><th scope="row">機率與統計</th><td><span class="tag tag--important">必修</span></td><td>3</td><td>數學</td><td>隨機變數、分布與估計，資料分析的語言。</td></tr>
-          <tr data-cat="soft ele"><td>大二下</td><th scope="row">網頁程式設計</th><td><span class="tag">選修</span></td><td>3</td><td>軟體</td><td>HTML、CSS、JavaScript 與網站設計思考。</td></tr>
-          <tr data-cat="basic req"><td>大三上</td><th scope="row">演算法</th><td><span class="tag tag--important">必修</span></td><td>3</td><td>基礎</td><td>分治、動態規劃、貪婪法與複雜度分析。</td></tr>
-          <tr data-cat="sys req"><td>大三上</td><th scope="row">作業系統</th><td><span class="tag tag--important">必修</span></td><td>3</td><td>系統</td><td>行程、排程、同步、記憶體與檔案系統。</td></tr>
-          <tr data-cat="soft ele"><td>大三上</td><th scope="row">資料庫系統</th><td><span class="tag">選修</span></td><td>3</td><td>軟體</td><td>關聯模型、SQL、正規化與交易處理。</td></tr>
-          <tr data-cat="net req"><td>大三下</td><th scope="row">計算機網路</th><td><span class="tag tag--important">必修</span></td><td>3</td><td>網路</td><td>協定分層、TCP/IP 與網路程式設計。</td></tr>
-          <tr data-cat="soft ele"><td>大三下</td><th scope="row">軟體工程</th><td><span class="tag">選修</span></td><td>3</td><td>軟體</td><td>需求、設計、測試與團隊開發流程。</td></tr>
-          <tr data-cat="ai ele"><td>大三下</td><th scope="row">人工智慧導論</th><td><span class="tag">選修</span></td><td>3</td><td>AI</td><td>搜尋、推論與機器學習的基本方法。</td></tr>
-          <tr data-cat="cap req"><td>大四上</td><th scope="row">畢業專題（一）</th><td><span class="tag tag--important">必修</span></td><td>2</td><td>專題</td><td>組隊定義問題、提出方法並完成原型。</td></tr>
-          <tr data-cat="ai ele"><td>大四上</td><th scope="row">機器學習</th><td><span class="tag">選修</span></td><td>3</td><td>AI</td><td>監督式與非監督式學習、模型評估。</td></tr>
-          <tr data-cat="net ele"><td>大四上</td><th scope="row">資訊安全</th><td><span class="tag">選修</span></td><td>3</td><td>網路</td><td>密碼學基礎、系統與網路攻防概念。</td></tr>
-          <tr data-cat="cap req"><td>大四下</td><th scope="row">畢業專題（二）</th><td><span class="tag tag--important">必修</span></td><td>2</td><td>專題</td><td>完成作品、測試驗證並公開展示。</td></tr>
-          <tr data-cat="ai ele"><td>大四下</td><th scope="row">人機互動</th><td><span class="tag">選修</span></td><td>3</td><td>AI</td><td>使用者研究、介面設計與可用性測試。</td></tr>
-          <tr data-cat="sys ele"><td>大四下</td><th scope="row">雲端與平行計算</th><td><span class="tag">選修</span></td><td>3</td><td>系統</td><td>分散式系統、容器與平行程式設計。</td></tr>
+            <tr data-cat="soft req"><td>大一上</td><td><code>CS106</code></td><th scope="row">程式設計（一）</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="soft req"><td>大一上</td><td><code>CS140</code></td><th scope="row">資訊概論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="math req"><td>大一上</td><td><code>CS147</code></td><th scope="row">微積分（一）</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>數學基礎</td></tr>
+            <tr data-cat="math ele"><td>大一上</td><td><code>CS152</code></td><th scope="row">普通物理</th><td><span class="tag">系選修</span></td><td>3</td><td>數學基礎</td></tr>
+            <tr data-cat="bio ele"><td>大一上</td><td><code>CS154</code></td><th scope="row">醫學工程概論（一）</th><td><span class="tag">系選修</span></td><td>2</td><td>生醫資訊</td></tr>
+            <tr data-cat="other ele"><td>大一上</td><td><code>CS158</code></td><th scope="row">資訊科技英文導論</th><td><span class="tag">系選修</span></td><td>3</td><td>實習／專題／其他</td></tr>
+            <tr data-cat="soft ele"><td>大一上</td><td><code>CS380</code></td><th scope="row">Web程式設計</th><td><span class="tag">系選修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="math req"><td>大一下</td><td><code>CS107</code></td><th scope="row">離散數學</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>數學基礎</td></tr>
+            <tr data-cat="soft req"><td>大一下</td><td><code>CS114</code></td><th scope="row">程式設計（二）</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="math req"><td>大一下</td><td><code>CS148</code></td><th scope="row">微積分（二）</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>數學基礎</td></tr>
+            <tr data-cat="sys req"><td>大一下</td><td><code>CS153</code></td><th scope="row">電子電路學</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>系統與晶片</td></tr>
+            <tr data-cat="math ele"><td>大一下</td><td><code>CS145</code></td><th scope="row">普通物理學（下）</th><td><span class="tag">系選修</span></td><td>3</td><td>數學基礎</td></tr>
+            <tr data-cat="soft ele"><td>大一下</td><td><code>CS151</code></td><th scope="row">網站程式設計實務</th><td><span class="tag">系選修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="bio ele"><td>大一下</td><td><code>CS155</code></td><th scope="row">醫學工程概論（二）</th><td><span class="tag">系選修</span></td><td>2</td><td>生醫資訊</td></tr>
+            <tr data-cat="bio ele"><td>大一下</td><td><code>CS156</code></td><th scope="row">醫療資訊學概論</th><td><span class="tag">系選修</span></td><td>2</td><td>生醫資訊</td></tr>
+            <tr data-cat="soft ele"><td>大一下</td><td><code>CS157</code></td><th scope="row">競技程式設計（一）</th><td><span class="tag">系選修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="soft req"><td>大二上</td><td><code>CS203</code></td><th scope="row">資料結構</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="sys req"><td>大二上</td><td><code>CS204</code></td><th scope="row">數位系統設計</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>系統與晶片</td></tr>
+            <tr data-cat="sys req"><td>大二上</td><td><code>CS206</code></td><th scope="row">數位系統實務</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>系統與晶片</td></tr>
+            <tr data-cat="net req"><td>大二上</td><td><code>CS229</code></td><th scope="row">資料通訊概論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>網路與資安</td></tr>
+            <tr data-cat="math req"><td>大二上</td><td><code>CS233</code></td><th scope="row">線性代數</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>數學基礎</td></tr>
+            <tr data-cat="sys ele"><td>大二上</td><td><code>CS235</code></td><th scope="row">電子電路（二）</th><td><span class="tag">系選修</span></td><td>3</td><td>系統與晶片</td></tr>
+            <tr data-cat="soft ele"><td>大二上</td><td><code>CS249</code></td><th scope="row">視窗程式設計</th><td><span class="tag">系選修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="soft ele"><td>大二上</td><td><code>CS256</code></td><th scope="row">網路程式設計</th><td><span class="tag">系選修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="bio ele"><td>大二上</td><td><code>CS258</code></td><th scope="row">醫用放射治療概論</th><td><span class="tag">系選修</span></td><td>2</td><td>生醫資訊</td></tr>
+            <tr data-cat="bio ele"><td>大二上</td><td><code>CS259</code></td><th scope="row">精準醫療概論</th><td><span class="tag">系選修</span></td><td>2</td><td>生醫資訊</td></tr>
+            <tr data-cat="soft ele"><td>大二上</td><td><code>CS261</code></td><th scope="row">競技程式設計（二）</th><td><span class="tag">系選修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="other ele"><td>大二上</td><td><code>CS419</code></td><th scope="row">科技英文</th><td><span class="tag">系選修</span></td><td>2</td><td>實習／專題／其他</td></tr>
+            <tr data-cat="math ele"><td>大二上</td><td><code>CS421</code></td><th scope="row">組合數學</th><td><span class="tag">系選修</span></td><td>3</td><td>數學基礎</td></tr>
+            <tr data-cat="math req"><td>大二下</td><td><code>CS226</code></td><th scope="row">機率與統計</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>數學基礎</td></tr>
+            <tr data-cat="sys req"><td>大二下</td><td><code>CS250</code></td><th scope="row">組合語言與計算機組織</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>系統與晶片</td></tr>
+            <tr data-cat="sys req"><td>大二下</td><td><code>CS305</code></td><th scope="row">作業系統概論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>系統與晶片</td></tr>
+            <tr data-cat="soft req"><td>大二下</td><td><code>CS309</code></td><th scope="row">演算法概論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="net req"><td>大二下</td><td><code>CS335</code></td><th scope="row">無線網路概論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>網路與資安</td></tr>
+            <tr data-cat="math ele"><td>大二下</td><td><code>CS205</code></td><th scope="row">工程數學</th><td><span class="tag">系選修</span></td><td>3</td><td>數學基礎</td></tr>
+            <tr data-cat="soft ele"><td>大二下</td><td><code>CS222</code></td><th scope="row">程式語言</th><td><span class="tag">系選修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="soft ele"><td>大二下</td><td><code>CS257</code></td><th scope="row">高等程式設計</th><td><span class="tag">系選修</span></td><td>2</td><td>程式與軟體</td></tr>
+            <tr data-cat="ai ele"><td>大二下</td><td><code>CS260</code></td><th scope="row">智慧醫療概論</th><td><span class="tag">系選修</span></td><td>2</td><td>AI 與資料</td></tr>
+            <tr data-cat="soft ele"><td>大二下</td><td><code>CS303</code></td><th scope="row">Java概論</th><td><span class="tag">系選修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="soft ele"><td>大二下</td><td><code>CS324</code></td><th scope="row">視窗程式設計（二）</th><td><span class="tag">系選修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="ai ele"><td>大二下</td><td><code>CS410</code></td><th scope="row">智慧型科技應用</th><td><span class="tag">系選修</span></td><td>3</td><td>AI 與資料</td></tr>
+            <tr data-cat="mm ele"><td>大二下</td><td><code>CS411</code></td><th scope="row">多媒體技術與應用</th><td><span class="tag">系選修</span></td><td>3</td><td>多媒體與互動</td></tr>
+            <tr data-cat="net req"><td>大三上</td><td><code>CS311</code></td><th scope="row">計算機網路概論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>網路與資安</td></tr>
+            <tr data-cat="mm req"><td>大三上</td><td><code>CS314</code></td><th scope="row">計算機圖學概論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>多媒體與互動</td></tr>
+            <tr data-cat="soft req"><td>大三上</td><td><code>CS321</code></td><th scope="row">編譯程式概論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="soft req"><td>大三上</td><td><code>CS322</code></td><th scope="row">微型應用程式設計實務</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="net req"><td>大三上</td><td><code>CS337</code></td><th scope="row">雲端運算與服務</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>網路與資安</td></tr>
+            <tr data-cat="net req"><td>大三上</td><td><code>CS349</code></td><th scope="row">智慧物聯網</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>網路與資安</td></tr>
+            <tr data-cat="sys req"><td>大三上</td><td><code>CS378</code></td><th scope="row">超大型積體電路設計導論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>系統與晶片</td></tr>
+            <tr data-cat="sys req"><td>大三上</td><td><code>CS379</code></td><th scope="row">內嵌式系統設計與實習</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>系統與晶片</td></tr>
+            <tr data-cat="other ele"><td>大三上</td><td><code>CS304</code></td><th scope="row">車載資料分析與服務</th><td><span class="tag">系選修</span></td><td>3</td><td>實習／專題／其他</td></tr>
+            <tr data-cat="math ele"><td>大三上</td><td><code>CS319</code></td><th scope="row">自動機理論概論</th><td><span class="tag">系選修</span></td><td>3</td><td>數學基礎</td></tr>
+            <tr data-cat="net ele"><td>大三上</td><td><code>CS328</code></td><th scope="row">新型態網路</th><td><span class="tag">系選修</span></td><td>3</td><td>網路與資安</td></tr>
+            <tr data-cat="soft ele"><td>大三上</td><td><code>CS333</code></td><th scope="row">R軟體與資料探勘</th><td><span class="tag">系選修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="bio ele"><td>大三上</td><td><code>CS341</code></td><th scope="row">生物學概論</th><td><span class="tag">系選修</span></td><td>3</td><td>生醫資訊</td></tr>
+            <tr data-cat="ai ele"><td>大三上</td><td><code>CS343</code></td><th scope="row">大數據創新應用專題</th><td><span class="tag">系選修</span></td><td>3</td><td>AI 與資料</td></tr>
+            <tr data-cat="ai ele"><td>大三上</td><td><code>CS356</code></td><th scope="row">人工智慧於臨床照護開發</th><td><span class="tag">系選修</span></td><td>3</td><td>AI 與資料</td></tr>
+            <tr data-cat="mm ele"><td>大三上</td><td><code>CS383</code></td><th scope="row">醫學影像概論（一）</th><td><span class="tag">系選修</span></td><td>2</td><td>多媒體與互動</td></tr>
+            <tr data-cat="ai req"><td>大三下</td><td><code>CS310</code></td><th scope="row">人工智慧概論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>AI 與資料</td></tr>
+            <tr data-cat="sys req"><td>大三下</td><td><code>CS320</code></td><th scope="row">微處理機系統設計</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>系統與晶片</td></tr>
+            <tr data-cat="mm req"><td>大三下</td><td><code>CS330</code></td><th scope="row">遊戲引擎理論與實務</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>多媒體與互動</td></tr>
+            <tr data-cat="ai req"><td>大三下</td><td><code>CS332</code></td><th scope="row">大數據科學導論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>AI 與資料</td></tr>
+            <tr data-cat="sys req"><td>大三下</td><td><code>CS338</code></td><th scope="row">積體電路設計自動化導論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>系統與晶片</td></tr>
+            <tr data-cat="soft req"><td>大三下</td><td><code>CS340</code></td><th scope="row">生物資訊概論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="other req"><td>大三下</td><td><code>CS350</code></td><th scope="row">資訊科技應用</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>實習／專題／其他</td></tr>
+            <tr data-cat="soft req"><td>大三下</td><td><code>CS351</code></td><th scope="row">人工智慧輔助軟體開發</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="soft req"><td>大三下</td><td><code>CS377</code></td><th scope="row">軟體工程</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="soft req"><td>大三下</td><td><code>CS381</code></td><th scope="row">開放平台軟體</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="soft req"><td>大三下</td><td><code>CS382</code></td><th scope="row">敏捷軟體開發</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="mm req"><td>大三下</td><td><code>CS401</code></td><th scope="row">多媒體系統概論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>多媒體與互動</td></tr>
+            <tr data-cat="soft ele"><td>大三下</td><td><code>CS301</code></td><th scope="row">連網型系統晶片之嵌入式軟體</th><td><span class="tag">系選修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="sys ele"><td>大三下</td><td><code>CS302</code></td><th scope="row">作業系統（二）</th><td><span class="tag">系選修</span></td><td>3</td><td>系統與晶片</td></tr>
+            <tr data-cat="soft ele"><td>大三下</td><td><code>CS312</code></td><th scope="row">UNIX系統概論</th><td><span class="tag">系選修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="mm ele"><td>大三下</td><td><code>CS315</code></td><th scope="row">數位電視概論</th><td><span class="tag">系選修</span></td><td>3</td><td>多媒體與互動</td></tr>
+            <tr data-cat="net ele"><td>大三下</td><td><code>CS329</code></td><th scope="row">電子商務概論</th><td><span class="tag">系選修</span></td><td>3</td><td>網路與資安</td></tr>
+            <tr data-cat="net ele"><td>大三下</td><td><code>CS339</code></td><th scope="row">智慧聯網</th><td><span class="tag">系選修</span></td><td>3</td><td>網路與資安</td></tr>
+            <tr data-cat="bio ele"><td>大三下</td><td><code>CS346</code></td><th scope="row">醫學概論</th><td><span class="tag">系選修</span></td><td>3</td><td>生醫資訊</td></tr>
+            <tr data-cat="mm ele"><td>大三下</td><td><code>CS384</code></td><th scope="row">醫學影像概論（二）</th><td><span class="tag">系選修</span></td><td>2</td><td>多媒體與互動</td></tr>
+            <tr data-cat="other ele"><td>大三下</td><td><code>CS400</code></td><th scope="row">專業實習（一）</th><td><span class="tag">系選修</span></td><td>3</td><td>實習／專題／其他</td></tr>
+            <tr data-cat="other ele"><td>大三下</td><td><code>CS415</code></td><th scope="row">專業實習（二）</th><td><span class="tag">系選修</span></td><td>3</td><td>實習／專題／其他</td></tr>
+            <tr data-cat="other ele"><td>大三下</td><td><code>CS416</code></td><th scope="row">專題製作（一）</th><td><span class="tag">系選修</span></td><td>3</td><td>實習／專題／其他</td></tr>
+            <tr data-cat="mm req"><td>大四上</td><td><code>CS313</code></td><th scope="row">人機互動設計概論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>多媒體與互動</td></tr>
+            <tr data-cat="ai req"><td>大四上</td><td><code>CS352</code></td><th scope="row">資料庫系統概論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>AI 與資料</td></tr>
+            <tr data-cat="net req"><td>大四上</td><td><code>CS354</code></td><th scope="row">電腦與網路安全概論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>網路與資安</td></tr>
+            <tr data-cat="ai req"><td>大四上</td><td><code>CS412</code></td><th scope="row">資料探勘</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>AI 與資料</td></tr>
+            <tr data-cat="soft ele"><td>大四上</td><td><code>CS317</code></td><th scope="row">3D動畫程式設計</th><td><span class="tag">系選修</span></td><td>3</td><td>程式與軟體</td></tr>
+            <tr data-cat="sys ele"><td>大四上</td><td><code>CS408</code></td><th scope="row">晶片設計與驗證實習</th><td><span class="tag">系選修</span></td><td>3</td><td>系統與晶片</td></tr>
+            <tr data-cat="other ele"><td>大四上</td><td><code>CS417</code></td><th scope="row">專題製作（二）</th><td><span class="tag">系選修</span></td><td>3</td><td>實習／專題／其他</td></tr>
+            <tr data-cat="net ele"><td>大四上</td><td><code>CS423</code></td><th scope="row">網路實習（一）</th><td><span class="tag">系選修</span></td><td>3</td><td>網路與資安</td></tr>
+            <tr data-cat="other ele"><td>大四上</td><td><code>CS426</code></td><th scope="row">專業實習（三）</th><td><span class="tag">系選修</span></td><td>3</td><td>實習／專題／其他</td></tr>
+            <tr data-cat="other ele"><td>大四上</td><td><code>CS427</code></td><th scope="row">專業實習（四）</th><td><span class="tag">系選修</span></td><td>3</td><td>實習／專題／其他</td></tr>
+            <tr data-cat="other ele"><td>大四上</td><td><code>CS428</code></td><th scope="row">專題製作（三）</th><td><span class="tag">系選修</span></td><td>4</td><td>實習／專題／其他</td></tr>
+            <tr data-cat="ai ele"><td>大四上</td><td><code>CS429</code></td><th scope="row">智慧製造</th><td><span class="tag">系選修</span></td><td>3</td><td>AI 與資料</td></tr>
+            <tr data-cat="ai ele"><td>大四上</td><td><code>CS431</code></td><th scope="row">生成式AI導論</th><td><span class="tag">系選修</span></td><td>3</td><td>AI 與資料</td></tr>
+            <tr data-cat="ai ele"><td>大四上</td><td><code>CS432</code></td><th scope="row">智慧型機器人導論</th><td><span class="tag">系選修</span></td><td>3</td><td>AI 與資料</td></tr>
+            <tr data-cat="net req"><td>大四下</td><td><code>CS355</code></td><th scope="row">網路攻防</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>網路與資安</td></tr>
+            <tr data-cat="mm req"><td>大四下</td><td><code>CS362</code></td><th scope="row">影像處理概論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>多媒體與互動</td></tr>
+            <tr data-cat="sys req"><td>大四下</td><td><code>CS430</code></td><th scope="row">量子計算概論</th><td><span class="tag tag--important">系必修</span></td><td>3</td><td>系統與晶片</td></tr>
+            <tr data-cat="math ele"><td>大四下</td><td><code>CS353</code></td><th scope="row">數值方法</th><td><span class="tag">系選修</span></td><td>3</td><td>數學基礎</td></tr>
+            <tr data-cat="ai ele"><td>大四下</td><td><code>CS406</code></td><th scope="row">資料探勘實務</th><td><span class="tag">系選修</span></td><td>3</td><td>AI 與資料</td></tr>
+            <tr data-cat="sys ele"><td>大四下</td><td><code>CS409</code></td><th scope="row">晶片設計自動化實習</th><td><span class="tag">系選修</span></td><td>3</td><td>系統與晶片</td></tr>
+            <tr data-cat="net ele"><td>大四下</td><td><code>CS424</code></td><th scope="row">網路實習（二）</th><td><span class="tag">系選修</span></td><td>3</td><td>網路與資安</td></tr>
+            <tr data-cat="other ele"><td>大四下</td><td><code>CS460</code></td><th scope="row">浸潤式資訊課程-國際經驗</th><td><span class="tag">系選修</span></td><td>1</td><td>實習／專題／其他</td></tr>
           </tbody>
         </table>
       </div>
       <p class="scroll-hint">在窄螢幕上，表格可在框內左右捲動。</p>
       <div class="empty-state" id="course-empty" hidden>
         <p><strong>找不到符合條件的課程。</strong></p>
-        <p>試試較短的關鍵字，或把方向改成「全部」。</p>
+        <p>試試較短的關鍵字，或把類別改成「全部」。</p>
       </div>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="rule-h">
+  <section class="section section--alt" aria-labelledby="rule-h">
     <div class="container split">
       <div>
-        <h2 id="rule-h">修課提醒</h2>
+        <h2 id="rule-h">官方文件與課表</h2>
         <ul>
-          <li>先修科目：例如「資料結構」建議先修「程式設計（一）（二）」。</li>
-          <li>選課前請確認當年度修業規定與畢業學分。</li>
-          <li>抵免、跨系選修等申請表單請見 <a href="resources.html#docs">資源與服務</a>。</li>
+          <li><a href="https://www.cse.yzu.edu.tw/api/regulation/undergraduate/115CS-1.docx" rel="noopener">115 學年度 系必修科目表</a></li>
+          <li><a href="https://www.cse.yzu.edu.tw/api/regulation/undergraduate/115CS-2.docx" rel="noopener">115 學年度 系選修科目表</a></li>
+          <li><a href="https://www.cse.yzu.edu.tw/api/regulation/undergraduate/115CS-3.doc" rel="noopener">115 學年度 擋修表</a></li>
+          <li>課表：<a href="https://www.cse.yzu.edu.tw/api/conect/course/1142/1142_1.xls" rel="noopener">1142 大一</a>、<a href="https://www.cse.yzu.edu.tw/api/conect/course/1142/1142_2.xls" rel="noopener">1142 大二</a>、<a href="https://www.cse.yzu.edu.tw/api/conect/course/1142/1142_34.xls" rel="noopener">1142 大三四</a></li>
+          <li><a href="https://portalfun.yzu.edu.tw/cosSelect/index.aspx" rel="noopener">元智大學課程查詢系統</a></li>
+          <li><a href="https://www.cse.yzu.edu.tw/education/mastercourse" rel="noopener">碩士班課程與修業規則</a>、<a href="https://www.cse.yzu.edu.tw/education/phdcourse" rel="noopener">博士班課程與修業規則</a></li>
         </ul>
       </div>
       <div class="callout callout--warn">
         <p><span class="tag tag--important">重要</span></p>
-        <p>本頁為教學示例。實際課程、學分與畢業條件以學校公告的修業規定為唯一依據。</p>
+        <p>本頁依官方「115 學年度入學」修業規定整理。其他入學年度、碩博士班規定，以及實際開課情形，請以官方文件與學校課程查詢系統為準。</p>
       </div>
     </div>
+    <div class="container"><p class="source-note">資料來源：元智資工官方系網 <a href="https://www.cse.yzu.edu.tw/education/ungraduatecourse" rel="noopener">學士學位</a>（查閱日期 2026-10-08）。</p></div>
   </section>
 </main>
 <footer class="site-footer">
@@ -229,8 +411,8 @@
     <div class="footer-grid">
       <section aria-labelledby="ft-about">
         <h2 id="ft-about">元智大學 資訊工程學系</h2>
-        <p class="muted">從程式到系統，探索資訊科技的可能。<br>320 桃園市中壢區遠東路 135 號（元智大學）</p>
-        <p class="small muted">聯絡電話、信箱與辦公時間請以<a href="https://www.cse.yzu.edu.tw/" rel="noopener">官方系網</a>公告為準。</p>
+        <p class="muted">320315 桃園市中壢區遠東路 135 號<br>一館三樓 1307 辦公室</p>
+        <p class="small">電話 <a href="tel:+88634638800,2351">03-4638800 分機 2351</a>｜傳真 03-4638850<br><a href="mailto:csdept@saturn.yzu.edu.tw">csdept@saturn.yzu.edu.tw</a></p>
       </section>
       <section aria-labelledby="ft-learn">
         <h2 id="ft-learn">學習與研究</h2>
@@ -238,7 +420,7 @@
       </section>
       <section aria-labelledby="ft-news">
         <h2 id="ft-news">消息與資源</h2>
-        <ul><li><a href="news.html">消息與活動</a></li><li><a href="news.html#calendar">活動月曆</a></li><li><a href="resources.html">文件與表單</a></li><li><a href="resources.html#faq">常見問題</a></li></ul>
+        <ul><li><a href="news.html">消息與活動</a></li><li><a href="news.html#calendar">活動月曆</a></li><li><a href="resources.html">文件與表單</a></li><li><a href="resources.html#faq">常見問題</a></li><li><a href="https://www.facebook.com/yzucs/" rel="noopener">系 Facebook</a></li></ul>
       </section>
       <section aria-labelledby="ft-project">
         <h2 id="ft-project">本專題</h2>
@@ -246,7 +428,7 @@
       </section>
     </div>
     <div class="footer-bottom">
-      <span>© <span data-year>2026</span> Web Programming 系網重設計 Project · 教學示例，非官方網站</span>
+      <span>© <span data-year>2026</span> Web Programming 系網重設計 Project · 內容來源：元智資工官方系網 · 非官方網站</span>
       <a href="#top">回到頂端 ↑</a>
     </div>
   </div>

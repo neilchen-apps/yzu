@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>消息與活動｜元智大學 資訊工程學系</title>
-<meta name="description" content="系所公告、講座與活動月曆，可依類別篩選並搜尋關鍵字。">
+<meta name="description" content="元智資工系所公告、演講、徵才實習、競賽與榮譽新聞，附活動月曆。">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23005FCC'/%3E%3Ctext x='16' y='21' font-size='13' font-family='monospace' font-weight='700' fill='white' text-anchor='middle'%3ECSE%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 <script>try{var t=localStorage.getItem('cse-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
 <body id="top">
 <a class="skip-link" href="#main">跳到主要內容</a>
-<div class="demo-bar" role="note"><div class="container"><strong>教學示例：</strong>本網站為 Web 程式設計課程「系網重設計」專題作品。教師、公告、活動與研究分類均為示例內容，不代表元智大學資訊工程學系正式資訊；正式資料請見 <a href="https://www.cse.yzu.edu.tw/" rel="noopener">官方系網</a>。</div></div>
+<div class="demo-bar" role="note"><div class="container"><strong>課程專題作品：</strong>本站為 Web 程式設計「系網重設計」專題，內容整理自<a href="https://www.cse.yzu.edu.tw/" rel="noopener">元智資工官方系網</a>（查閱日期 2026-10-08），並非官方網站；最新與正式資訊請以官方系網為準。</div></div>
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="index.html" aria-label="元智大學資訊工程學系 首頁">
@@ -39,39 +39,70 @@
     <div class="container">
       <nav class="breadcrumb" aria-label="麵包屑"><ol><li><a href="index.html">首頁</a></li><li><span aria-current="page">消息與活動</span></li></ol></nav>
       <h1>消息與活動</h1>
-      <p class="lead">每則公告都包含日期、類別與摘要；重要事項同時以「重要」文字與顏色標記。所有公告均為教學虛構內容。</p>
+      <p class="lead">系所公告、書報討論演講、徵才實習、競賽與榮譽新聞。每則都附日期與類別，標題連到官方系網全文。</p>
     </div>
   </section>
 
   <section class="section" aria-labelledby="list-h">
     <div class="container">
       <div class="section-head">
-        <div><span class="kicker">ANNOUNCEMENTS</span><h2 id="list-h">公告</h2></div>
-        <p>搜尋標題或內容、選擇類別；找不到時會顯示提示，按「重設」回到全部公告。</p>
+        <div><span class="kicker">NEWS</span><h2 id="list-h">最新消息</h2></div>
+        <p>搜尋標題、選擇類別；找不到時會顯示提示，按「重設」回到全部消息。</p>
       </div>
-      <form class="filter-bar js-only" data-filter="#news-list" data-count="#news-count" data-empty="#news-empty" role="search" aria-label="搜尋公告">
-        <div class="field"><label for="nq">關鍵字</label><input id="nq" name="q" type="search" placeholder="例如：Demo、獎學金" autocomplete="off"></div>
+      <form class="filter-bar js-only" data-filter="#news-list" data-count="#news-count" data-empty="#news-empty" role="search" aria-label="搜尋消息">
+        <div class="field"><label for="nq">關鍵字</label><input id="nq" name="q" type="search" placeholder="例如：實習、選課、AI" autocomplete="off"></div>
         <div class="field"><label for="nc">類別</label>
-          <select id="nc" name="cat"><option value="all">全部類別</option><option value="admit">招生</option><option value="course">課程</option><option value="aid">獎助</option><option value="event">活動</option></select>
+          <select id="nc" name="cat"><option value="all">全部類別</option><option value="ann">系所公告</option><option value="talk">演講／書報</option><option value="job">徵才／實習</option><option value="comp">競賽</option><option value="honor">榮譽／新聞</option></select>
         </div>
         <button class="btn" type="submit">搜尋</button>
         <button class="btn btn--ghost" type="reset">重設</button>
       </form>
-      <p class="no-js-note">（搜尋功能需要 JavaScript；目前顯示全部公告。）</p>
+      <p class="no-js-note">（搜尋功能需要 JavaScript；目前顯示全部消息。）</p>
       <p class="result-count" id="news-count"></p>
       <ul class="news-list" id="news-list">
-        <li class="news-item" id="n1" data-cat="admit"><time datetime="2026-10-20">2026-10-20</time><div><div class="tags"><span class="tag tag--important">重要・截止日 10/31</span><span class="tag">招生</span></div><h3>碩士班甄試報名提醒（示例）</h3><p>報名期間、應備文件與繳交方式整理；實際日期以招生簡章為準。</p></div></li>
-        <li class="news-item" id="n2" data-cat="course"><time datetime="2026-10-12">2026-10-12</time><div><div class="tags"><span class="tag">課程</span></div><h3>期中專題 Demo 時程公告（示例）</h3><p>各組 Demo 時段與場地安排，請於指定時間前完成登記。</p></div></li>
-        <li class="news-item" id="n3" data-cat="aid"><time datetime="2026-10-05">2026-10-05</time><div><div class="tags"><span class="tag tag--important">重要・截止日 10/23</span><span class="tag">獎助</span></div><h3>學期獎助學金申請說明（示例）</h3><p>申請資格、名額與送件流程；相關表單已放在資源專區。</p></div></li>
-        <li class="news-item" id="n4" data-cat="course"><time datetime="2026-09-30">2026-09-30</time><div><div class="tags"><span class="tag">課程</span></div><h3>加退選後課程異動通知（示例）</h3><p>部分選修課程教室異動，請至課程查詢系統確認。</p></div></li>
-        <li class="news-item" id="n5" data-cat="event"><time datetime="2026-09-22">2026-09-22</time><div><div class="tags"><span class="tag">活動</span></div><h3>學生作品展示徵件（示例）</h3><p>歡迎提交課程或專題作品，入選作品將於活動中展示。</p></div></li>
-        <li class="news-item" id="n6" data-cat="aid"><time datetime="2026-09-15">2026-09-15</time><div><div class="tags"><span class="tag">獎助</span></div><h3>研究室專題生招募說明（示例）</h3><p>有興趣加入研究室的同學，可參考各研究室招募資訊。</p></div></li>
-        <li class="news-item" id="n7" data-cat="admit"><time datetime="2026-09-08">2026-09-08</time><div><div class="tags"><span class="tag">招生</span></div><h3>系所說明會報名開放（示例）</h3><p>說明會介紹課程地圖、研究方向與學習資源。</p></div></li>
+        <li class="news-item" data-cat="talk"><time datetime="2026-10-16">2026-10-16</time><div><div class="tags"><span class="tag">演講／書報</span><span class="tag tag--accent">13:00・曾學文 教授</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/speech?id=995" rel="noopener">Development and Design of Embedded Systems for Smart Health Applications with Energy Harvesting</a></h3></div></li>
+        <li class="news-item" data-cat="honor"><time datetime="2026-10-02">2026-10-02</time><div><div class="tags"><span class="tag">榮譽／新聞</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/others?id=103" rel="noopener">AI讀懂你的目光　元智智慧眼動追蹤技術勇奪台灣創博會銀牌</a></h3></div></li>
+        <li class="news-item" data-cat="talk"><time datetime="2026-10-02">2026-10-02</time><div><div class="tags"><span class="tag">演講／書報</span><span class="tag tag--accent">13:00・李愛先 醫師</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/speech?id=994" rel="noopener">漸進式半監督冠狀動脈分割(A progressive teacher–student framework for semi-supervised coronary artery segmentation in X-ray angiography via robust signal refinement)</a></h3></div></li>
+        <li class="news-item" data-cat="job"><time datetime="2026-09-23">2026-09-23</time><div><div class="tags"><span class="tag">徵才／實習</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/recruitment?id=168" rel="noopener">歡迎報名~ 鴻海科技集團 iPEBG 事業群 科技探索日 ✕ 預聘/實習專場｜10/14 元智大學</a></h3></div></li>
+        <li class="news-item" data-cat="comp"><time datetime="2026-09-23">2026-09-23</time><div><div class="tags"><span class="tag">競賽</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/competition?id=83" rel="noopener">萬元獎金競賽｜2026全國大專青年樂齡防跌影片創意競賽</a></h3></div></li>
+        <li class="news-item" data-cat="honor"><time datetime="2026-09-18">2026-09-18</time><div><div class="tags"><span class="tag">榮譽／新聞</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/others?id=102" rel="noopener">AI助攻6G低軌衛星通訊 元智資工邱震鵬獲崇越論文大賞佳作</a></h3></div></li>
+        <li class="news-item" data-cat="talk"><time datetime="2026-09-18">2026-09-18</time><div><div class="tags"><span class="tag">演講／書報</span><span class="tag tag--accent">13:00・曾王道 副教授</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/speech?id=993" rel="noopener">Reconfigurable Spatial Transformation Method Based on Geometric Shape Mapping for VLSI Test Data Compression</a></h3></div></li>
+        <li class="news-item" data-cat="comp"><time datetime="2026-09-17">2026-09-17</time><div><div class="tags"><span class="tag">競賽</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/competition?id=82" rel="noopener">歡迎參加 ~2026 臺北秋季程式設計節大黑客松競賽</a></h3></div></li>
+        <li class="news-item" data-cat="ann"><time datetime="2026-09-15">2026-09-15</time><div><div class="tags"><span class="tag">系所公告</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/announcement?id=204" rel="noopener">GSA校園人才講堂—跟半導體一起翻轉世界｜9/18 中央大學 教研大樓002教室 盛大舉行！</a></h3></div></li>
+        <li class="news-item" data-cat="comp"><time datetime="2026-09-14">2026-09-14</time><div><div class="tags"><span class="tag">競賽</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/competition?id=81" rel="noopener">總獎金 70 萬！友達光電辦理「AI 座艙感知與視覺化 Hackathon」活動</a></h3></div></li>
+        <li class="news-item" data-cat="comp"><time datetime="2026-09-11">2026-09-11</time><div><div class="tags"><span class="tag">競賽</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/competition?id=80" rel="noopener">歡迎報名~第1屆台灣機器人競賽 醫療領域x物流領域</a></h3></div></li>
+        <li class="news-item" data-cat="talk"><time datetime="2026-09-11">2026-09-11</time><div><div class="tags"><span class="tag">演講／書報</span><span class="tag tag--accent">14:00・陳永哲 講師</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/speech?id=992" rel="noopener">一般安全衛生教育訓練(General Safety and Health Education Training)</a></h3></div></li>
+        <li class="news-item" data-cat="ann"><time datetime="2026-09-10">2026-09-10</time><div><div class="tags"><span class="tag">系所公告</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/announcement?id=203" rel="noopener">資工系 2026年 實習說明會 (包含:幸福安全職場宣導)</a></h3></div></li>
+        <li class="news-item" data-cat="job"><time datetime="2026-09-09">2026-09-09</time><div><div class="tags"><span class="tag">徵才／實習</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/recruitment?id=167" rel="noopener">2027台積電預辦登積計畫：預聘暨研發替代役招募系列活動，開跑囉～</a></h3></div></li>
+        <li class="news-item" data-cat="honor"><time datetime="2026-09-04">2026-09-04</time><div><div class="tags"><span class="tag">榮譽／新聞</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/others?id=101" rel="noopener">元智資工師生攻研6G低軌衛星網路 AI智慧路由技術勇奪優秀學生論文獎</a></h3></div></li>
+        <li class="news-item" data-cat="ann"><time datetime="2026-09-02">2026-09-02</time><div><div class="tags"><span class="tag">系所公告</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/announcement?id=202" rel="noopener">資訊工程學系 1151學期 大一新生 選課注意事項</a></h3></div></li>
+        <li class="news-item" data-cat="comp"><time datetime="2026-09-02">2026-09-02</time><div><div class="tags"><span class="tag">競賽</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/competition?id=79" rel="noopener">第21屆資安技能金盾獎競賽 歡迎參加！</a></h3></div></li>
+        <li class="news-item" data-cat="ann"><time datetime="2026-08-05">2026-08-05</time><div><div class="tags"><span class="tag">系所公告</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/announcement?id=201" rel="noopener">資工系誠聘專任教師—2027.02.01起聘</a></h3></div></li>
+        <li class="news-item" data-cat="job"><time datetime="2026-08-05">2026-08-05</time><div><div class="tags"><span class="tag">徵才／實習</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/recruitment?id=166" rel="noopener">資工系誠聘專任教師—2027.02.01起聘</a></h3></div></li>
+        <li class="news-item" data-cat="honor"><time datetime="2026-08-05">2026-08-05</time><div><div class="tags"><span class="tag">榮譽／新聞</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/others?id=100" rel="noopener">元智資工勇奪2026中國工程師學會學生論文競賽3獎項</a></h3></div></li>
+        <li class="news-item" data-cat="honor"><time datetime="2026-08-04">2026-08-04</time><div><div class="tags"><span class="tag">榮譽／新聞</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/others?id=99" rel="noopener">元智資工獲2026全國私立大專院校程式競賽(PUPC) 5銀1銅!</a></h3></div></li>
+        <li class="news-item" data-cat="comp"><time datetime="2026-07-23">2026-07-23</time><div><div class="tags"><span class="tag">競賽</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/competition?id=77" rel="noopener">踴躍報名! 資策會 AI 創新實戰大賽｜最高獎金 50,000 元!</a></h3></div></li>
+        <li class="news-item" data-cat="honor"><time datetime="2026-06-26">2026-06-26</time><div><div class="tags"><span class="tag">榮譽／新聞</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/others?id=98" rel="noopener">元智資工碩士生勇奪2025資訊學會最佳論文獎佳作</a></h3></div></li>
+        <li class="news-item" data-cat="talk"><time datetime="2026-06-26">2026-06-26</time><div><div class="tags"><span class="tag">演講／書報</span><span class="tag tag--accent">14:00・鄭泓灝資深軟體架構師</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/speech?id=991" rel="noopener">從開發家到指揮家：AI時代下研究生的生存與突圍(From Developer to Conductor: Surviving and Thriving as an Information Science Graduate in the AI Era)		</a></h3></div></li>
+        <li class="news-item" data-cat="ann"><time datetime="2026-06-17">2026-06-17</time><div><div class="tags"><span class="tag">系所公告</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/announcement?id=200" rel="noopener">(115暑假)博士班資格考申請公告 Doctoral qualifying exam application</a></h3></div></li>
+        <li class="news-item" data-cat="talk"><time datetime="2026-06-12">2026-06-12</time><div><div class="tags"><span class="tag">演講／書報</span><span class="tag tag--accent">14:00・林渝非 AI工程師</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/speech?id=990" rel="noopener">職場online - 學術與產業跨界11年的經驗指南(Career Online - A 11-Year Guide to Bridging Academia and Industry)</a></h3></div></li>
+        <li class="news-item" data-cat="ann"><time datetime="2026-06-02">2026-06-02</time><div><div class="tags"><span class="tag">系所公告</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/announcement?id=199" rel="noopener">元智 × NVIDIA Watch Party 2026 大成功！現場座無虛席！</a></h3></div></li>
+        <li class="news-item" data-cat="job"><time datetime="2026-05-21">2026-05-21</time><div><div class="tags"><span class="tag">徵才／實習</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/recruitment?id=165" rel="noopener">科林研發製造 Lam Research Manufacturing 半導體設備助理工程師職缺</a></h3></div></li>
+        <li class="news-item" data-cat="job"><time datetime="2026-05-14">2026-05-14</time><div><div class="tags"><span class="tag">徵才／實習</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/recruitment?id=164" rel="noopener">元智大學公開徵求資工系系主任候選人啟事(延長公告)</a></h3></div></li>
+        <li class="news-item" data-cat="job"><time datetime="2026-05-12">2026-05-12</time><div><div class="tags"><span class="tag">徵才／實習</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/recruitment?id=163" rel="noopener">【英業達股份有限公司】2026優秀人才獎助學金徵才資訊</a></h3></div></li>
+        <li class="news-item" data-cat="ann"><time datetime="2026-05-04">2026-05-04</time><div><div class="tags"><span class="tag">系所公告</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/announcement?id=198" rel="noopener">[好禮等你來抽，手刀報名] 2026 NVIDIA執行長黃仁勳主題演講直播</a></h3></div></li>
+        <li class="news-item" data-cat="ann"><time datetime="2026-04-14">2026-04-14</time><div><div class="tags"><span class="tag">系所公告</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/announcement?id=197" rel="noopener">優先實習,進入光電大廠~歡迎報名富采資訊學程!</a></h3></div></li>
+        <li class="news-item" data-cat="ann"><time datetime="2026-03-03">2026-03-03</time><div><div class="tags"><span class="tag">系所公告</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/announcement?id=196" rel="noopener">115學年度大學申請入學學習準備指引</a></h3></div></li>
+        <li class="news-item" data-cat="ann"><time datetime="2026-02-09">2026-02-09</time><div><div class="tags"><span class="tag">系所公告</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/announcement?id=195" rel="noopener">元智資工攜手遠通電收 推動 AI 與 3D LiDAR 智慧交通應用研究</a></h3></div></li>
+        <li class="news-item" data-cat="ann"><time datetime="2026-02-09">2026-02-09</time><div><div class="tags"><span class="tag">系所公告</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/announcement?id=194" rel="noopener">元智產學打造「資安欺敵誘捕」平臺 提升企業防禦力</a></h3></div></li>
+        <li class="news-item" data-cat="ann"><time datetime="2026-02-03">2026-02-03</time><div><div class="tags"><span class="tag">系所公告</span></div><h3><a href="https://www.cse.yzu.edu.tw/news/announcement?id=193" rel="noopener">元智資工攜手勤晁科技 推動 AI 驅動異常行為偵測產學合作計畫</a></h3></div></li>
       </ul>
       <div class="empty-state" id="news-empty" hidden>
-        <p><strong>沒有符合條件的公告。</strong></p>
+        <p><strong>沒有符合條件的消息。</strong></p>
         <p>請換個關鍵字，或把類別改為「全部類別」。</p>
       </div>
+      <p style="margin-top:var(--space)">更早的消息：<a href="https://www.cse.yzu.edu.tw/news/announcement" rel="noopener">系所公告</a>・<a href="https://www.cse.yzu.edu.tw/news/speech" rel="noopener">演講</a>・<a href="https://www.cse.yzu.edu.tw/news/recruitment" rel="noopener">徵才</a>・<a href="https://www.cse.yzu.edu.tw/news/competition" rel="noopener">競賽</a>・<a href="https://www.cse.yzu.edu.tw/news/others" rel="noopener">其他</a></p>
+      <p class="source-note">資料來源：元智資工官方系網 <a href="https://www.cse.yzu.edu.tw/news/announcement" rel="noopener">最新消息</a>（查閱日期 2026-10-08）。</p>
     </div>
   </section>
 
@@ -79,7 +110,7 @@
     <div class="container">
       <div class="section-head">
         <div><span class="kicker">CALENDAR</span><h2 id="cal-h">活動月曆</h2></div>
-        <p>月曆中的活動可點擊，會跳到右側清單對應項目；手機上請直接閱讀清單。</p>
+        <p>收錄書報討論演講（R1401B 教室）與公告中載明日期的活動。點月曆中的活動會跳到右側清單；手機上請直接閱讀清單。</p>
       </div>
       <div class="cal-layout">
         <div class="calendar" data-calendar>
@@ -90,27 +121,27 @@
           </div>
         <div class="table-wrap" data-month="2026 年 10 月" tabindex="0" role="region" aria-label="2026 年 10 月月曆">
           <table>
-            <caption>2026 年 10 月活動月曆（示例）</caption>
+            <caption>2026 年 10 月活動月曆</caption>
             <thead><tr><th scope="col">日</th><th scope="col">一</th><th scope="col">二</th><th scope="col">三</th><th scope="col">四</th><th scope="col">五</th><th scope="col">六</th></tr></thead>
             <tbody>
-            <tr><td class="is-empty"></td><td class="is-empty"></td><td class="is-empty"></td><td class="is-empty"></td><td>1</td><td>2</td><td>3</td></tr>
+            <tr><td class="is-empty"></td><td class="is-empty"></td><td class="is-empty"></td><td class="is-empty"></td><td>1</td><td>2<a href="#t994">書報討論：李愛先 醫師</a></td><td>3</td></tr>
             <tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
-            <tr><td>11</td><td>12</td><td>13</td><td>14<a href="#e3">新生座談</a></td><td>15</td><td>16</td><td>17</td></tr>
-            <tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22<a href="#e1">網頁設計交流工作坊</a></td><td>23</td><td>24</td></tr>
-            <tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31<a href="#d1">碩士班甄試報名截止</a></td></tr>
+            <tr><td>11</td><td>12</td><td>13</td><td>14<a href="#r168">鴻海 iPEBG 科技探索日</a></td><td>15</td><td>16<a href="#t995">書報討論：曾學文 教授</a></td><td>17</td></tr>
+            <tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr>
+            <tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr>
             </tbody>
           </table>
         </div>
-        <div class="table-wrap" data-month="2026 年 11 月" tabindex="0" role="region" aria-label="2026 年 11 月月曆">
+        <div class="table-wrap" data-month="2026 年 9 月" tabindex="0" role="region" aria-label="2026 年 9 月月曆">
           <table>
-            <caption>2026 年 11 月活動月曆（示例）</caption>
+            <caption>2026 年 9 月活動月曆</caption>
             <thead><tr><th scope="col">日</th><th scope="col">一</th><th scope="col">二</th><th scope="col">三</th><th scope="col">四</th><th scope="col">五</th><th scope="col">六</th></tr></thead>
             <tbody>
-            <tr><td>1</td><td>2</td><td>3</td><td>4<a href="#e2">業界講座：軟體工程實務</a></td><td>5</td><td>6</td><td>7</td></tr>
-            <tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr>
-            <tr><td>15</td><td>16</td><td>17</td><td>18<a href="#e4">期中專題 Demo 日</a></td><td>19</td><td>20</td><td>21</td></tr>
-            <tr><td>22</td><td>23</td><td>24</td><td>25<a href="#e5">研究室開放參觀</a></td><td>26</td><td>27</td><td>28</td></tr>
-            <tr><td>29</td><td>30</td><td class="is-empty"></td><td class="is-empty"></td><td class="is-empty"></td><td class="is-empty"></td><td class="is-empty"></td></tr>
+            <tr><td class="is-empty"></td><td class="is-empty"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+            <tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11<a href="#t992">書報討論：陳永哲 講師</a></td><td>12</td></tr>
+            <tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18<a href="#t993">書報討論：曾王道 副教授</a><a href="#a204">GSA 校園人才講堂</a></td><td>19</td></tr>
+            <tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr>
+            <tr><td>27</td><td>28</td><td>29</td><td>30</td><td class="is-empty"></td><td class="is-empty"></td><td class="is-empty"></td></tr>
             </tbody>
           </table>
         </div>
@@ -119,12 +150,12 @@
         <div>
           <h3>活動清單</h3>
           <ul class="event-list">
-          <li id="e3"><time datetime="2026-10-14">2026-10-14（三）</time><span class="tag tag--accent">活動</span> <strong>新生座談（示例）</strong><br><span class="muted small">14:00・系館會議室（示例）</span></li>
-          <li id="e1"><time datetime="2026-10-22">2026-10-22（四）</time><span class="tag tag--accent">活動</span> <strong>網頁設計交流工作坊（示例）</strong><br><span class="muted small">13:30・電腦教室（示例）</span></li>
-          <li id="d1"><time datetime="2026-10-31">2026-10-31（六）</time><span class="tag tag--important">截止日</span> <strong>碩士班甄試報名截止（示例）</strong><br><span class="muted small">全天・線上報名</span></li>
-          <li id="e2"><time datetime="2026-11-04">2026-11-04（三）</time><span class="tag tag--accent">活動</span> <strong>業界講座：軟體工程實務（示例）</strong><br><span class="muted small">15:00・演講廳（示例）</span></li>
-          <li id="e4"><time datetime="2026-11-18">2026-11-18（三）</time><span class="tag tag--accent">活動</span> <strong>期中專題 Demo 日（示例）</strong><br><span class="muted small">09:00・系館各教室（示例）</span></li>
-          <li id="e5"><time datetime="2026-11-25">2026-11-25（三）</time><span class="tag tag--accent">活動</span> <strong>研究室開放參觀（示例）</strong><br><span class="muted small">13:00・各研究室（示例）</span></li>
+          <li id="t995"><time datetime="2026-10-16">2026-10-16（五）</time><span class="tag tag--accent">演講</span> <strong><a href="https://www.cse.yzu.edu.tw/news/speech?id=995" rel="noopener">書報討論：曾學文 教授</a></strong><br><span class="muted small">13:00・R1401B・Development and Design of Embedded Systems for Smart Health Applications with Energy Harvesting</span></li>
+          <li id="r168"><time datetime="2026-10-14">2026-10-14（三）</time><span class="tag tag--accent">活動</span> <strong><a href="https://www.cse.yzu.edu.tw/news/recruitment?id=168" rel="noopener">鴻海 iPEBG 科技探索日</a></strong><br><span class="muted small">元智大學・預聘／實習專場</span></li>
+          <li id="t994"><time datetime="2026-10-02">2026-10-02（五）</time><span class="tag tag--accent">演講</span> <strong><a href="https://www.cse.yzu.edu.tw/news/speech?id=994" rel="noopener">書報討論：李愛先 醫師</a></strong><br><span class="muted small">13:00・R1401B・漸進式半監督冠狀動脈分割(A progressive teacher–student framework for semi-supervised coronary artery segmentation in X-ray angiography via robust signal refinement)</span></li>
+          <li id="t993"><time datetime="2026-09-18">2026-09-18（五）</time><span class="tag tag--accent">演講</span> <strong><a href="https://www.cse.yzu.edu.tw/news/speech?id=993" rel="noopener">書報討論：曾王道 副教授</a></strong><br><span class="muted small">13:00・R1401B・Reconfigurable Spatial Transformation Method Based on Geometric Shape Mapping for VLSI Test Data Compression</span></li>
+          <li id="a204"><time datetime="2026-09-18">2026-09-18（五）</time><span class="tag tag--accent">活動</span> <strong><a href="https://www.cse.yzu.edu.tw/news/announcement?id=204" rel="noopener">GSA 校園人才講堂</a></strong><br><span class="muted small">中央大學 教研大樓 002 教室</span></li>
+          <li id="t992"><time datetime="2026-09-11">2026-09-11（五）</time><span class="tag tag--accent">演講</span> <strong><a href="https://www.cse.yzu.edu.tw/news/speech?id=992" rel="noopener">書報討論：陳永哲 講師</a></strong><br><span class="muted small">14:00・R1401B・一般安全衛生教育訓練(General Safety and Health Education Training)</span></li>
           </ul>
         </div>
       </div>
@@ -136,8 +167,8 @@
     <div class="footer-grid">
       <section aria-labelledby="ft-about">
         <h2 id="ft-about">元智大學 資訊工程學系</h2>
-        <p class="muted">從程式到系統，探索資訊科技的可能。<br>320 桃園市中壢區遠東路 135 號（元智大學）</p>
-        <p class="small muted">聯絡電話、信箱與辦公時間請以<a href="https://www.cse.yzu.edu.tw/" rel="noopener">官方系網</a>公告為準。</p>
+        <p class="muted">320315 桃園市中壢區遠東路 135 號<br>一館三樓 1307 辦公室</p>
+        <p class="small">電話 <a href="tel:+88634638800,2351">03-4638800 分機 2351</a>｜傳真 03-4638850<br><a href="mailto:csdept@saturn.yzu.edu.tw">csdept@saturn.yzu.edu.tw</a></p>
       </section>
       <section aria-labelledby="ft-learn">
         <h2 id="ft-learn">學習與研究</h2>
@@ -145,7 +176,7 @@
       </section>
       <section aria-labelledby="ft-news">
         <h2 id="ft-news">消息與資源</h2>
-        <ul><li><a href="news.html">消息與活動</a></li><li><a href="news.html#calendar">活動月曆</a></li><li><a href="resources.html">文件與表單</a></li><li><a href="resources.html#faq">常見問題</a></li></ul>
+        <ul><li><a href="news.html">消息與活動</a></li><li><a href="news.html#calendar">活動月曆</a></li><li><a href="resources.html">文件與表單</a></li><li><a href="resources.html#faq">常見問題</a></li><li><a href="https://www.facebook.com/yzucs/" rel="noopener">系 Facebook</a></li></ul>
       </section>
       <section aria-labelledby="ft-project">
         <h2 id="ft-project">本專題</h2>
@@ -153,7 +184,7 @@
       </section>
     </div>
     <div class="footer-bottom">
-      <span>© <span data-year>2026</span> Web Programming 系網重設計 Project · 教學示例，非官方網站</span>
+      <span>© <span data-year>2026</span> Web Programming 系網重設計 Project · 內容來源：元智資工官方系網 · 非官方網站</span>
       <a href="#top">回到頂端 ↑</a>
     </div>
   </div>

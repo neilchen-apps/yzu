@@ -11,7 +11,7 @@
 </head>
 <body id="top">
 <a class="skip-link" href="#main">跳到主要內容</a>
-<div class="demo-bar" role="note"><div class="container"><strong>教學示例：</strong>本網站為 Web 程式設計課程「系網重設計」專題作品。教師、公告、活動與研究分類均為示例內容，不代表元智大學資訊工程學系正式資訊；正式資料請見 <a href="https://www.cse.yzu.edu.tw/" rel="noopener">官方系網</a>。</div></div>
+<div class="demo-bar" role="note"><div class="container"><strong>課程專題作品：</strong>本站為 Web 程式設計「系網重設計」專題，內容整理自<a href="https://www.cse.yzu.edu.tw/" rel="noopener">元智資工官方系網</a>（查閱日期 2026-10-08），並非官方網站；最新與正式資訊請以官方系網為準。</div></div>
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="index.html" aria-label="元智大學資訊工程學系 首頁">
@@ -65,11 +65,11 @@
         <section class="toc-section" id="observe" aria-labelledby="observe-h">
           <span class="kicker">01 / OBSERVE</span>
           <h2 id="observe-h">問題觀察</h2>
-          <p class="prose">以「資訊系網站」常見的使用情境整理三個設計問題。這些是設計假設，需要在實際系網上逐頁確認並記錄查閱日期，不憑空批評官方網站。</p>
+          <p class="prose">以下三個問題來自實際檢視<a href="https://www.cse.yzu.edu.tw/" rel="noopener">元智資工官方系網</a>（查閱日期 2026-10-08），每一項都附可重現的觀察方式。</p>
           <div class="grid">
-            <div class="card"><span class="tag tag--important">問題 1・查找</span><h3 style="margin-top:8px">入口名稱無法預測內容</h3><p>「更多」「其他」等名稱讓讀者猜不到點進去會看到什麼。</p><p class="small muted">對應：理念 01 資訊組織</p></div>
-            <div class="card"><span class="tag tag--important">問題 2・層級</span><h3 style="margin-top:8px">所有區塊同等醒目</h3><p>公告、輪播、連結區塊都用強烈樣式，第一眼不知道從哪裡開始。</p><p class="small muted">對應：理念 02 視覺層級</p></div>
-            <div class="card"><span class="tag tag--important">問題 3・裝置</span><h3 style="margin-top:8px">手機只是把桌面縮小</h3><p>寬表格撐破頁面、雙欄變得過窄，公告標題被截斷。</p><p class="small muted">對應：理念 08 響應式</p></div>
+            <div class="card"><span class="tag tag--important">問題 1・可讀取性</span><h3 style="margin-top:8px">沒有 JavaScript 就沒有內容</h3><p>官方首頁的 HTML 只有一個空的 <code>&lt;div id="app"&gt;</code>，所有文字都由約 1MB 的 JS 載入後才出現。JS 失敗或載入慢時，訪客看到空白頁。</p><p class="small muted">觀察：檢視原始碼。對應：理念 08 包容性。本站改為內容直接寫在 HTML，JS 只做強化。</p></div>
+            <div class="card"><span class="tag tag--important">問題 2・縮放</span><h3 style="margin-top:8px">手機上無法放大文字</h3><p>官方頁面的 viewport 設定 <code>user-scalable=0, maximum-scale=1.0</code>，手機使用者無法用雙指放大閱讀。</p><p class="small muted">觀察：檢視 &lt;head&gt;。對應：理念 04 字體與閱讀。本站 viewport 不限制縮放。</p></div>
+            <div class="card"><span class="tag tag--important">問題 3・查找</span><h3 style="margin-top:8px">課程資訊藏在下載檔裡</h3><p>學士班必修、選修與課表以 .docx／.xls 檔提供，要先下載、開啟才能找到一門課；導覽名稱如「網路資源」「學生天地」也較難預測內容。</p><p class="small muted">觀察：教育 › 學士學位。對應：理念 01 資訊組織。本站把 115 學年度課程做成可搜尋的網頁。</p></div>
           </div>
         </section>
 
@@ -238,18 +238,20 @@ table { min-width: 640px; }</code></pre>
               <thead><tr><th scope="col">任務</th><th scope="col">起點</th><th scope="col">成功條件</th><th scope="col">同學 1</th><th scope="col">同學 2</th><th scope="col">卡住位置／修正</th></tr></thead>
               <tbody>
                 <tr><th scope="row">找到大三上的必修課</th><td>首頁</td><td>到達課程地圖並切到大三</td><td></td><td></td><td></td></tr>
-                <tr><th scope="row">找一位網路與安全領域的教師</th><td>首頁</td><td>在師資頁完成篩選</td><td></td><td></td><td></td></tr>
-                <tr><th scope="row">找到最近的截止日</th><td>首頁</td><td>說出日期與事項</td><td></td><td></td><td></td></tr>
+                <tr><th scope="row">找一位網路、雲端與物聯網領域的教師</th><td>首頁</td><td>在師資頁完成篩選</td><td></td><td></td><td></td></tr>
+                <tr><th scope="row">找到系辦電話與分機</th><td>首頁</td><td>說出電話與分機</td><td></td><td></td><td></td></tr>
                 <tr><th scope="row">只用鍵盤展開一則 FAQ</th><td>資源頁</td><td>Tab＋Enter 完成</td><td></td><td></td><td></td></tr>
-                <tr><th scope="row">手機上查看 11 月活動</th><td>消息頁（360px）</td><td>找到活動清單</td><td></td><td></td><td></td></tr>
+                <tr><th scope="row">手機上查看 9 月的演講</th><td>消息頁（360px）</td><td>找到活動清單</td><td></td><td></td><td></td></tr>
               </tbody>
             </table>
           </div>
           <h3 style="margin-top:var(--space)">已知限制</h3>
           <ul>
             <li>radio 分類切換使用 <code>:has()</code>；極舊瀏覽器會改為直接列出全部內容（已用 <code>@supports</code> 處理）。</li>
-            <li>教師、公告、課程為示例資料，正式上線前需依官方來源逐項替換並記錄查閱日期。</li>
-            <li>月曆只示範兩個月份；正式版需從資料來源產生。</li>
+            <li>內容是 2026-10-08 從官方系網取得的快照，不會自動更新；官方有新公告時需重新產生頁面。</li>
+            <li>師資的「研究領域」標籤與課程的「方向」欄，是本站依研究專長與課名關鍵字整理的分類，並非官方分類。</li>
+            <li>課程地圖只整理 115 學年度入學學士班；其他年度與碩博士班以連結官方文件呈現。</li>
+            <li>月曆收錄 2026 年 9–10 月的書報討論演講與公告中載明日期的活動。</li>
           </ul>
         </section>
 
@@ -260,7 +262,8 @@ table { min-width: 640px; }</code></pre>
           <h3>技術與內容來源</h3>
           <ul>
             <li><a href="YZU_CSE_Website_Redesign_Project_Plan.html">本課專題企劃書：好的資訊系網站怎麼設計？</a>（設計理念、色盤、評分）</li>
-            <li><a href="https://www.cse.yzu.edu.tw/" rel="noopener">元智大學資訊工程學系官方網站</a>（內容來源入口；本站未複製其正式資料）</li>
+            <li><a href="https://www.cse.yzu.edu.tw/" rel="noopener">元智大學資訊工程學系官方網站</a>（全部內容來源，查閱日期 2026-10-08）：系所簡介、未來發展、教授與職員、四大研究方向、學士學位 115 學年度必修／選修科目表、專題製作與專業實習、最新消息（公告、演講、徵才、競賽、其他）、聯絡我們。</li>
+            <li>資料取得方式：官方網站為單頁應用程式，本站從其公開資料端點（例如 <code>/api/member/getProfessor/</code>、<code>/api/news/get?category=…</code>、<code>/api/html/research/AI.html</code>）讀取內容，再整理成靜態 HTML；每頁底部標示對應的官方頁面。</li>
             <li><a href="https://www.w3.org/WAI/tutorials/page-structure/" rel="noopener">W3C：Page Structure Tutorial</a></li>
             <li><a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html" rel="noopener">W3C：SC 1.4.3 Contrast (Minimum)</a></li>
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details" rel="noopener">MDN：details</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible" rel="noopener">:focus-visible</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type" rel="noopener">scroll-snap-type</a>、<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" rel="noopener">prefers-reduced-motion</a></li>
@@ -310,8 +313,8 @@ table { min-width: 640px; }</code></pre>
     <div class="footer-grid">
       <section aria-labelledby="ft-about">
         <h2 id="ft-about">元智大學 資訊工程學系</h2>
-        <p class="muted">從程式到系統，探索資訊科技的可能。<br>320 桃園市中壢區遠東路 135 號（元智大學）</p>
-        <p class="small muted">聯絡電話、信箱與辦公時間請以<a href="https://www.cse.yzu.edu.tw/" rel="noopener">官方系網</a>公告為準。</p>
+        <p class="muted">320315 桃園市中壢區遠東路 135 號<br>一館三樓 1307 辦公室</p>
+        <p class="small">電話 <a href="tel:+88634638800,2351">03-4638800 分機 2351</a>｜傳真 03-4638850<br><a href="mailto:csdept@saturn.yzu.edu.tw">csdept@saturn.yzu.edu.tw</a></p>
       </section>
       <section aria-labelledby="ft-learn">
         <h2 id="ft-learn">學習與研究</h2>
@@ -319,7 +322,7 @@ table { min-width: 640px; }</code></pre>
       </section>
       <section aria-labelledby="ft-news">
         <h2 id="ft-news">消息與資源</h2>
-        <ul><li><a href="news.html">消息與活動</a></li><li><a href="news.html#calendar">活動月曆</a></li><li><a href="resources.html">文件與表單</a></li><li><a href="resources.html#faq">常見問題</a></li></ul>
+        <ul><li><a href="news.html">消息與活動</a></li><li><a href="news.html#calendar">活動月曆</a></li><li><a href="resources.html">文件與表單</a></li><li><a href="resources.html#faq">常見問題</a></li><li><a href="https://www.facebook.com/yzucs/" rel="noopener">系 Facebook</a></li></ul>
       </section>
       <section aria-labelledby="ft-project">
         <h2 id="ft-project">本專題</h2>
@@ -327,7 +330,7 @@ table { min-width: 640px; }</code></pre>
       </section>
     </div>
     <div class="footer-bottom">
-      <span>© <span data-year>2026</span> Web Programming 系網重設計 Project · 教學示例，非官方網站</span>
+      <span>© <span data-year>2026</span> Web Programming 系網重設計 Project · 內容來源：元智資工官方系網 · 非官方網站</span>
       <a href="#top">回到頂端 ↑</a>
     </div>
   </div>
