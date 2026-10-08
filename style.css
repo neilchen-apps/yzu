@@ -429,9 +429,9 @@ tbody tr:hover { background: color-mix(in srgb, var(--surface-2) 60%, transparen
 /* 師資頁：領域篩選（全部 = 顯示所有） */
 .tabs:has(#f-all:checked) .tab-panel,
 .tabs:has(#f-ai:checked) .tab-panel[data-field~="ai"],
-.tabs:has(#f-sys:checked) .tab-panel[data-field~="sys"],
+.tabs:has(#f-mm:checked) .tab-panel[data-field~="mm"],
 .tabs:has(#f-net:checked) .tab-panel[data-field~="net"],
-.tabs:has(#f-hci:checked) .tab-panel[data-field~="hci"],
+.tabs:has(#f-chip:checked) .tab-panel[data-field~="chip"],
 /* 首頁：消息分類 */
 .tabs:has(#n-news:checked) #np-news,
 .tabs:has(#n-event:checked) #np-event,
@@ -439,9 +439,9 @@ tbody tr:hover { background: color-mix(in srgb, var(--surface-2) 60%, transparen
 .faculty-grid .tab-panel { display: none; }
 .tabs:has(#f-all:checked) .faculty-grid .tab-panel,
 .tabs:has(#f-ai:checked) .faculty-grid .tab-panel[data-field~="ai"],
-.tabs:has(#f-sys:checked) .faculty-grid .tab-panel[data-field~="sys"],
+.tabs:has(#f-mm:checked) .faculty-grid .tab-panel[data-field~="mm"],
 .tabs:has(#f-net:checked) .faculty-grid .tab-panel[data-field~="net"],
-.tabs:has(#f-hci:checked) .faculty-grid .tab-panel[data-field~="hci"] { display: flex; }
+.tabs:has(#f-chip:checked) .faculty-grid .tab-panel[data-field~="chip"] { display: flex; }
 /* 不支援 :has() 的舊瀏覽器：全部顯示，內容不會消失 */
 @supports not selector(:has(*)) {
   .tab-panel, .faculty-grid .tab-panel { display: block; margin-bottom: var(--space); }
@@ -691,3 +691,24 @@ tbody tr:hover { background: color-mix(in srgb, var(--surface-2) 60%, transparen
 figure { margin: 0; }
 figure.card img { border: 1px solid var(--line); border-radius: var(--radius-sm); margin-bottom: var(--space-2); width: 100%; }
 @media (max-width: 480px) { .brand-sub { display: none; } .brand-name { font-size: 1rem; } }
+
+/* =========================================================
+   26. 官方資料版新增元件
+   ========================================================= */
+.stats { list-style: none; margin: 0 0 var(--space-2); padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: var(--space-3); }
+.stats li { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: var(--space-3) var(--space); display: grid; gap: 2px; }
+.stats strong { font-family: var(--font-mono); font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.3rem); color: var(--accent); line-height: 1.2; }
+.stats span { color: var(--muted); font-size: .95rem; }
+@media (max-width: 800px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.source-note { font-size: var(--fs-sm); color: var(--muted); margin-top: var(--space); padding-top: var(--space-2); border-top: 1px dashed var(--line); }
+.faculty-head { display: flex; gap: var(--space-3); align-items: center; margin-bottom: var(--space-2); }
+.faculty-head .avatar { margin-bottom: 0; }
+.faculty-head h3 { margin: 0; }
+.faculty-head p { margin: 0; }
+.meta-list { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 12px; margin: 0; font-size: .92rem; }
+.meta-list dt { color: var(--muted); font-weight: 700; }
+.meta-list dd { margin: 0; overflow-wrap: anywhere; }
+.lab-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 8px; }
+.lab-list li { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: var(--radius-sm); padding: 10px 14px; }
+.table-compact { min-width: 420px; }
+blockquote.callout { margin: 0; font-size: var(--fs-lg); }
